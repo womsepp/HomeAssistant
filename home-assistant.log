@@ -24090,3 +24090,1329 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
     raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
 serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:49:58.295 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:03.808 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:09.325 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:14.846 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:20.372 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:25.888 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:31.409 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:36.925 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:42.438 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:47.943 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:53.455 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:50:58.983 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:04.506 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:10.020 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:15.552 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:21.075 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:26.587 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:32.093 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:37.615 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:43.136 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:48.659 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:54.171 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:51:59.697 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:05.206 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:10.720 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:16.229 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:21.753 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:27.269 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:32.793 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:38.321 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:43.840 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:49.365 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:52:54.898 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+2023-06-09 14:53:00.415 WARNING (MainThread) [bellows.zigbee.application] ControllerApplication reset unsuccessful: SerialException(2, "could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 641, in _reset_controller_loop
+    await self._reset_controller()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 662, in _reset_controller
+    await self.connect()
+  File "/usr/local/lib/python3.11/site-packages/bellows/zigbee/application.py", line 131, in connect
+    self._ezsp = await bellows.ezsp.EZSP.initialize(self.config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 147, in initialize
+    await ezsp.connect(use_thread=zigpy_config[conf.CONF_USE_THREAD])
+  File "/usr/local/lib/python3.11/site-packages/bellows/ezsp/__init__.py", line 164, in connect
+    self._gw = await bellows.uart.connect(self._config, self, use_thread=use_thread)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 406, in connect
+    protocol, connection_done = await thread.run_coroutine_threadsafe(
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/bellows/uart.py", line 385, in _connect
+    transport, protocol = await zigpy.serial.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/zigpy/serial.py", line 37, in create_serial_connection
+    transport, protocol = await pyserial_asyncio.create_serial_connection(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/usr/local/lib/python3.11/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00: [Errno 2] No such file or directory: '/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00'
