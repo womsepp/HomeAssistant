@@ -1,0 +1,762 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "f22bc027ac9322739cc539086bc5db02",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "cd30445c3960304a8be224fd475f9dfe",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c1d96791307902f9f6fd29fb2ee12b88",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "Nexus 7",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2022.12.0-full (3026)",
+          "device_name": "Nexus 7",
+          "manufacturer": "asus",
+          "model": "Nexus 7",
+          "os_name": "Android",
+          "os_version": "32",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true
+          },
+          "device_id": "c5974bb706818d2e",
+          "webhook_id": "d6991c0b61d8168b8ba8b6b09fcf4389f4e5631dfe0ccf5ec823f7fe120d9cd9",
+          "user_id": "d9d673acf530496eb784356d2ca6e60a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-c5974bb706818d2e",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "98e0d2e6e1380151a7856632a3c4c694",
+        "version": 1,
+        "domain": "google",
+        "title": "dominik.wambacher@gmail.com",
+        "data": {
+          "auth_implementation": "google_30649279952_1j1gpi4iafmf54c70ia8hu76ki511mu3_apps_googleusercontent_com",
+          "token": {
+            "access_token": "ya29.a0AWY7CkmrpmRMDBBGfOsc8QIwneyH1W2bvD3bAY2H30UQGUzlQalVVILCk2W9zj49ckK69Fa01jndCaLxfJXkk6ehxCu8L1Afk8ovsseBHoukM9cUTAipgLu5uKlRLYE_nPqm4EfZy0n6irIa0luP4yebWL0vonYXsQaCgYKAc8SARESFQG1tDrpZP97ZKrnb-XTinKow4fOUw0169",
+            "refresh_token": "1//09OEQPcLAHCJqCgYIARAAGAkSNwF-L9IrMiE50R6XeLhStutNDRXXqhmrqgFL9XQon0s3rY6I_25hsP7GjsgJU7ehbjb8H5dwkHk",
+            "scope": "https://www.googleapis.com/auth/calendar",
+            "token_type": "Bearer",
+            "expires_in": 3599,
+            "expires_at": 1686313534.4307866
+          }
+        },
+        "options": {
+          "calendar_access": "read_write"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "dominik.wambacher@gmail.com",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "dca709d39537ccc96304d76a2c5af51e",
+        "version": 1,
+        "domain": "hacs",
+        "title": "",
+        "data": {
+          "token": "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"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9af5917952f9b4c9969da7b3fa5f0fa0",
+        "version": 1,
+        "domain": "nodered",
+        "title": "name",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c4b58cc5c0a878076470ddda06a77d49",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "iPhone von Maria",
+        "data": {
+          "device_id": "B1A1DD47-6F3B-4AFF-B0FF-73F91CA7D826",
+          "device_name": "iPhone von Maria",
+          "supports_encryption": true,
+          "model": "iPhone10,6",
+          "os_name": "iOS",
+          "manufacturer": "Apple",
+          "app_id": "io.robbie.HomeAssistant",
+          "app_data": {
+            "push_token": "fc4VIrbZVkPZnn1emAr0i4:APA91bFlp3HywQGj_ZM7b5MuiPcz6rueXaIpFTSc4b-ihwT6p0SOsBLsq7NPY6wzmNa4ERiVRoN6eTOxQ23HVAC4MdN9trrfqkbZhCqucctpNUgweSRhf7QKGfyPylLEWLPsxRr4sxpp",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "os_version": "16.1",
+          "app_name": "Home Assistant",
+          "app_version": "2023.4 (2023.460)",
+          "webhook_id": "a01428c12d78285b016c7f490c809fa4a05b44cb8a0408b82bf6aee7a932c3e5",
+          "secret": "bdf8fe6b8b4e742ffd1767c3179c384e458b6ff0df0fb746c4a10ea8e2a01989",
+          "user_id": "84d72e86f992414aaf8bfbfadbe32466",
+          "no_legacy_encryption": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-B1A1DD47-6F3B-4AFF-B0FF-73F91CA7D826",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "07509a3801ab9c69edd197bf6b12e41f",
+        "version": 1,
+        "domain": "integration",
+        "title": "Gesamt Energieerbrauch Wohnung",
+        "data": {},
+        "options": {
+          "name": "Gesamt Energieerbrauch Wohnung",
+          "source": "sensor.gesamt_verbrauch_in_w",
+          "method": "trapezoidal",
+          "round": 3.0,
+          "unit_prefix": "k",
+          "unit_time": "h"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "92a67b4ac3dadfa93d3697160e77a18c",
+        "version": 1,
+        "domain": "speedtestdotnet",
+        "title": "SpeedTest",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "8507589ba9a83aa99af3e47c65994bc2",
+        "version": 1,
+        "domain": "cpuspeed",
+        "title": "CPU Speed",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "cpuspeed",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "8d3c2e5baf85994564b1129add0b15fb",
+        "version": 2,
+        "domain": "openweathermap",
+        "title": "OpenWeatherMap",
+        "data": {
+          "api_key": "cccdf945a0ddde7aca43c5e86bdf7012",
+          "name": "OpenWeatherMap",
+          "latitude": 48.2671099,
+          "longitude": 14.2698473,
+          "mode": "onecall_hourly",
+          "language": "de"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "48.2671099-14.2698473",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d86eefe03bcfee8d3f1cba73ad82e134",
+        "version": 1,
+        "domain": "hassio",
+        "title": "Supervisor",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "unique_id": "hassio",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "14e255c988220f4485541fb12cfe9934",
+        "version": 1,
+        "domain": "dlna_dms",
+        "title": "ADMINISTRATOR: wambacher.dominik@outlook.com:",
+        "data": {
+          "url": "http://[fe80::664a:905:4dc4:96ce%2]:2869/upnphost/udhisapi.dll?content=uuid:9de5eb42-f6e3-4451-ae59-73645ca556fc"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ignore",
+        "unique_id": "uuid:9de5eb42-f6e3-4451-ae59-73645ca556fc::urn:schemas-upnp-org:device:MediaServer:1",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "fa2a2286904aed91c0b9e4fd637e2c72",
+        "version": 1,
+        "domain": "upnp",
+        "title": "ZTE UPnP",
+        "data": {
+          "udn": "uuid:4e8a6908-9d4d-48c6-b16a-1ecd89dd87e2",
+          "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+          "original_udn": "uuid:4e8a6908-9d4d-48c6-b16a-1ecd89dd87e2",
+          "location": "http://192.168.0.1:10010/rootDesc.xml",
+          "mac_address": null,
+          "host": "192.168.0.1"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "ssdp",
+        "unique_id": "uuid:4e8a6908-9d4d-48c6-b16a-1ecd89dd87e2::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
+        "disabled_by": "user"
+      },
+      {
+        "entry_id": "05a1346db71b7b52b0dca63d697484b3",
+        "version": 1,
+        "domain": "shelly",
+        "title": "Wohnzimmer Bewegungsmelder",
+        "data": {
+          "host": "192.168.0.201",
+          "sleep_period": 3600,
+          "model": "SHMOS-02",
+          "gen": 1
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "8CF681DC7656",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0d82a499c65e572e35cfd6125fa83423",
+        "version": 1,
+        "domain": "shelly",
+        "title": "Wohnraumlüftung",
+        "data": {
+          "host": "192.168.0.203",
+          "sleep_period": 0,
+          "model": "SNSW-102P16EU",
+          "gen": 2
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "C049EF8D23A8",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "b7280c3df0870722252854a4af3d9394",
+        "version": 1,
+        "domain": "shelly",
+        "title": "WohnzimmerLicht",
+        "data": {
+          "host": "192.168.0.204",
+          "sleep_period": 0,
+          "model": "SNSW-102P16EU",
+          "gen": 2
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "C049EF8D38A4",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "67845ebe005ce6f502edf273d5a10037",
+        "version": 1,
+        "domain": "webostv",
+        "title": "LG webOS Smart TV",
+        "data": {
+          "host": "192.168.0.159",
+          "client_secret": "04021411a5f8ef540389f702c3140fab"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "60fb5fe2-1dac-0ce8-442e-9b07c1a96b42",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "832475b15b06583a2c174cd29bdd3089",
+        "version": 1,
+        "domain": "homekit_controller",
+        "title": "LG webOS TV E03D",
+        "data": {
+          "AccessoryPairingID": "C6:B7:39:B6:BC:1D",
+          "AccessoryLTPK": "de2bdf8a0cfcfaa84a7ad942b77d2677833f5f313ec9996ed2c74c29bd6dd835",
+          "iOSPairingId": "fcbe8ef4-49ae-41c4-ad19-3cfd063962f0",
+          "iOSDeviceLTSK": "e880438777e977ffd1dbb46261b492246caa43db6d68ff3ee97b4286a50113e6",
+          "iOSDeviceLTPK": "f7bde877714fc9dbfb555337d523f4ac110aab410e5155d71d07f010516f1cd9",
+          "AccessoryIP": "192.168.0.159",
+          "AccessoryPort": 39453,
+          "Connection": "IP"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "c6:b7:39:b6:bc:1d",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a602710bb411564d21f28ea48091e350",
+        "version": 1,
+        "domain": "cast",
+        "title": "Google Cast",
+        "data": {
+          "ignore_cec": [],
+          "known_hosts": [],
+          "uuid": [],
+          "user_id": "167489abd0464e97a88c805d4bc82d43"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "cast",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "09ba896d7cbf66f85d0683a28d1bd7af",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "78f59a0a81abcf3e6e74bf6d45c5b69e",
+        "version": 1,
+        "domain": "spotify",
+        "title": "hugo_boi",
+        "data": {
+          "auth_implementation": "spotify_cfcd4b1a244345e799981dcb658576c3",
+          "token": {
+            "access_token": "BQDTarZRQ4kWQ686u9zpU8udpKpJgeq2XiwnuZ8Gk0C3zd5cvEytdZ2kv5wL3KDKmBZ1tGMuGtGDa4lHUwd5pWAhd2KCBvBWyQp9mia44ft_Q1Pi3RDikfaA7-bzINcv-Uw-IWmX9XmuhCygr7wAChPX0gEQ1nx-m7d77jmMOa1YuqIoXx1gGta2JMXuieSRJiQvtElllaTax70624gjI2Vbr--kUSL2Ilr9xdStlOc",
+            "token_type": "Bearer",
+            "expires_in": 3600,
+            "refresh_token": "AQC2kAx5VxgHcRa4--uQyxicsIvarF2ReBtk1b7nbtG7Yii_5OUdd77vyYk-JfSEq5Y9rrzHd04w0S7DxKjKGk5YgmZc-DeyFEr9QH5MUabMe6wcs40m8B_a5V0q_VdF2SE",
+            "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
+            "expires_at": 1686312486.6034226
+          },
+          "id": "hugo_boi",
+          "name": "hugo_boi"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "hugo_boi",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "721720bdf7c9835b5b5a9491adbf212c",
+        "version": 1,
+        "domain": "motioneye",
+        "title": "Add-on",
+        "data": {
+          "admin_username": "admin",
+          "surveillance_username": "admin",
+          "surveillance_password": "admin",
+          "admin_password": "",
+          "url": "http://127.0.0.1:28765",
+          "webhook_id": "63a1efaf7d674bd79349f4263029579f73456600939bfb7b1d3c6c49b6085f94"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "hassio",
+        "unique_id": null,
+        "disabled_by": "user"
+      },
+      {
+        "entry_id": "7695300e6b77ee1a6af69f19a251e0bd",
+        "version": 1,
+        "domain": "ui_lovelace_minimalist",
+        "title": "UI Lovelace Minimalist",
+        "data": {
+          "token": "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"
+        },
+        "options": {
+          "language": "German",
+          "sidepanel_enabled": true,
+          "sidepanel_title": "Minimalist UI",
+          "sidepanel_icon": "mdi:laptop",
+          "adaptive_ui_enabled": false,
+          "adaptive_ui_title": "Minimalist UI",
+          "adaptive_ui_icon": "mdi:laptop",
+          "theme": "minimalist-desktop",
+          "theme_path": "themes/",
+          "include_other_cards": false,
+          "community_cards_enabled": false
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": "user"
+      },
+      {
+        "entry_id": "ecf3d0256d21f24b8537e7e2afa0d32c",
+        "version": 1,
+        "domain": "uptime",
+        "title": "Uptime",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "94d31d9919051f0103bb7e760972a0ab",
+        "version": 1,
+        "domain": "ios",
+        "title": "Home Assistant iOS",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "ios",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "eccb61a5c17f876e5e33e4b88f6d010c",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.94"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "500291f975a7",
+        "disabled_by": "user"
+      },
+      {
+        "entry_id": "7391c66968b4bfa494d5f7220424d2e3",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "OnePlus",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "beta-10008-d81913b7-full (10008)",
+          "device_name": "OnePlus",
+          "manufacturer": "OnePlus",
+          "model": "HD1903",
+          "os_name": "Android",
+          "os_version": "31",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "cIthDNdQTceRqxVfUcRwe2:APA91bEqofM9SmCTniLHXsmKKroFEQikaLV8FM9j1hzeoSKd_3Cb7D1SOVN6v0HmDpKXHW87LxjaXkVB4ql2LF_NmEytFR-Rxb8msbKjl0E9mr3RxknXDcFmBEgCF-0ZnlMKmw_7ylp-"
+          },
+          "device_id": "2e4cd43017fdf7ca",
+          "webhook_id": "7b749a5ae69131bf4069ea2264c6eced6c190c9d8660742d3592589384cd96f2",
+          "user_id": "d9d673acf530496eb784356d2ca6e60a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-2e4cd43017fdf7ca",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "6c8a40d2a7e5749c951549a7ff6c7328",
+        "version": 1,
+        "domain": "auto_backup",
+        "title": "Auto Backup",
+        "data": {},
+        "options": {
+          "auto_purge": true,
+          "backup_timeout": 20
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9f45e0911d664d2c7e0e153551309229",
+        "version": 3,
+        "domain": "zha",
+        "title": "SONOFF Zigbee 3.0 USB Dongle Plus V2",
+        "data": {
+          "device": {
+            "path": "/dev/serial/by-id/usb-ITEAD_SONOFF_Zigbee_3.0_USB_Dongle_Plus_V2_20221202085629-if00",
+            "baudrate": 115200,
+            "flow_control": "software"
+          },
+          "radio_type": "ezsp"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "usb",
+        "unique_id": "1A86:55D4_20221202085629_ITEAD_SONOFF Zigbee 3.0 USB Dongle Plus V2",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "724fcb510a8ed9e1690144b16cc7bceb",
+        "version": 1,
+        "domain": "bluetooth",
+        "title": "C8:E2:65:DE:F8:68",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": "C8:E2:65:DE:F8:68",
+        "disabled_by": "user"
+      },
+      {
+        "entry_id": "e11db3ce6529077170012d87732bc14f",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Wohnzimmerlicht",
+        "data": {},
+        "options": {
+          "entity_id": "switch.wohnzimmerlicht_switch_0",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d5524c85496958faefaddfae54c7e48b",
+        "version": 1,
+        "domain": "shelly",
+        "title": "Schlafzimmer Licht",
+        "data": {
+          "host": "192.168.0.206",
+          "sleep_period": 0,
+          "model": "SHBDUO-1",
+          "gen": 1
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "3494546AEF2D",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "8e46d503fe9a978d20cc40bfbdd514a2",
+        "version": 2,
+        "domain": "utility_meter",
+        "title": "Tagesverbrauch",
+        "data": {},
+        "options": {
+          "name": "Tagesverbrauch",
+          "source": "sensor.total_energy_spent",
+          "cycle": "daily",
+          "offset": 0.0,
+          "tariffs": [],
+          "net_consumption": false,
+          "delta_values": false,
+          "periodically_resetting": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9e9a66bae7eb9ff0efab2effc93ea30e",
+        "version": 1,
+        "domain": "shelly",
+        "title": "Shelly Energy Meter",
+        "data": {
+          "host": "192.168.0.202",
+          "sleep_period": 0,
+          "model": "SHEM-3",
+          "gen": 1
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "zeroconf",
+        "unique_id": "485519D9A422",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "2361065fc72e5d840bafa09956622990",
+        "version": 1,
+        "domain": "min_max",
+        "title": "GesamtEnergieVerbrauchWohnung",
+        "data": {},
+        "options": {
+          "name": "GesamtEnergieVerbrauchWohnung",
+          "entity_ids": [
+            "sensor.shelly_energy_meter_channel_a_power",
+            "sensor.shelly_energy_meter_channel_b_power",
+            "sensor.shelly_energy_meter_channel_c_power"
+          ],
+          "type": "sum",
+          "round_digits": 2.0
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "faed939d9e753491e43a39b2077d59af",
+        "version": 1,
+        "domain": "integration",
+        "title": "WohnungEnergieVerbrauch",
+        "data": {},
+        "options": {
+          "name": "WohnungEnergieVerbrauch",
+          "source": "sensor.gesamtenergieverbrauchwohnung",
+          "method": "trapezoidal",
+          "round": 2.0,
+          "unit_prefix": "none",
+          "unit_time": "h"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "48f4005f9f9616088ebc8c4e0353ce7f",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "192.168.0.110",
+        "data": {
+          "broker": "192.168.0.110",
+          "port": 1883,
+          "username": "HomeAssistant",
+          "discovery": true,
+          "discovery_prefix": "homeassistant"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "2865bb249ee7f558986e30ceac240946",
+        "version": 1,
+        "domain": "tasmota",
+        "title": "Tasmota",
+        "data": {
+          "discovery_prefix": "tasmota/discovery"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "07999723157bc3c1b57dcbccea8d4de3",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "HD1903",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "beta-10158-bc248b63-full (10158)",
+          "device_name": "OnePlus",
+          "manufacturer": "OnePlus",
+          "model": "HD1903",
+          "os_name": "Android",
+          "os_version": "31",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "c5yHMov3Sr28o271WyeqnC:APA91bGJABSSjd6hCCaYsz2wXkeBf7V5rBjoL7wSfYPBTVLjnfxW5sAhTypC6M9_3Y8Q81jXK_c7mv096zJsxpmQ-1jZJi5U5J2VdCT2lqkbOZlbZgH-I3Nsqz2M3ZS1NURqKBZUqiNS"
+          },
+          "device_id": "c09f4690ba8f9f47",
+          "webhook_id": "f96e182107a267a48c251acc9d1754084f3d1c3d172b29bcd470044141033f0c",
+          "user_id": "d9d673acf530496eb784356d2ca6e60a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-c09f4690ba8f9f47",
+        "disabled_by": null
+      }
+    ]
+  }
+}

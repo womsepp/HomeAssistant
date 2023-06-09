@@ -1,0 +1,56 @@
+# mqtt configuratoin
+#
+sensor:
+  # motion sensor in kitchen
+  # - name: "Wohnzimmer Helligkeit"
+  #   device:
+  #     name: "Shelly Motion"
+  #     identifiers: "8CF681DC7656"
+  #     configuration_url: "http://192.168.0.201"
+  #   state_topic: "shellies/shellymotion2-8CF681DC7656/status"
+  #   unit_of_measurement: "lux"
+  #   value_template: "{{ value_json.lux }}"
+  #   device_class: "illuminance"
+  #   state_class: "measurement"
+  #   json_attributes_topic: "shellies/LinzWohnzimmer/info"
+  #   json_attributes_template: "{{ value_json.tmp }}"
+  #   unique_id: "8CF681DC7656.helligkeit"
+  # - name: "Wohnzimmer Temperatur"
+  #   device:
+  #     name: "Shelly Motion"
+  #     identifiers: "8CF681DC7656"
+  #     configuration_url: "http://192.168.0.201"
+  #   state_topic: "shellies/shellymotion2-8CF681DC7656/status"
+  #   unit_of_measurement: "°C"
+  #   state_class: "measurement"
+  #   device_class: "temperature"
+  #   value_template: "{{ value_json.tmp.value }}"
+  #   json_attributes_topic: "shellies/LinzwWohnzimmer/info"
+  #   json_attributes_template: "{{ value_json.tmp.value }}"
+  #   unique_id: "8CF681DC7656.temperatur"
+  # - name: "Bewegungsmelder Batterie"
+  #   device:
+  #     name: "Shelly Motion"
+  #     identifiers: "8CF681DC7656"
+  #     configuration_url: "http://192.168.0.201"
+  #   state_topic: "shellies/shellymotion2-8CF681DC7656/status"
+  #   unit_of_measurement: "%"
+  #   device_class: "battery"
+  #   state_class: "measurement"
+  #   value_template: "{{ value_json.bat }}"
+  #   unique_id: "8CF681DC7656.bat"
+
+  # custom sensors!!
+
+# -----------------------------------------------------------------------------
+# binary_sensor:
+# - name: "Wohnzimmer Bewegungsmelder"
+#   device:
+#     name: "Shelly Motion"
+#     identifiers: "8CF681DC7656"
+#     configuration_url: "http://192.168.0.201"
+#   state_topic: "shellies/shellymotion2-8CF681DC7656/status"
+#   value_template: "{{ 'ON' if value_json.motion == true else 'OFF' }}"
+#   unique_id: "8CF681DC765.motion"
+#   device_class: "motion"
+

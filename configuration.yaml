@@ -1,0 +1,94 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+mqtt: !include mqtt.yaml
+sensor: !include sensor.yaml
+#template: !include template.yaml
+# binary_sensor: !include binary_sensor.yaml
+
+alarm_control_panel: !include alarm.yaml
+
+homeassistant:
+  customize:
+    sensor.energy_import_sum:
+      device_class: "energy"
+      unit_of_measurement: "kWh"
+      state_class: total
+      #last_reset: "1970-01-01T00:00:00+00:00"
+    input_datetime.weckzeit:
+      device_class: "timestamp"
+
+http:
+  server_port: "31415"
+  ip_ban_enabled: true
+  login_attempts_threshold: 2
+
+switch:
+  - platform: wake_on_lan
+    name: "LG Web OS WakeOnLan"
+    mac: ""
+    # turn_off: "none"
+    host: "192.168.0.205"
+
+utility_meter:
+  energy_import_daily:
+    source: sensor.energy_import_sum
+    name: Energy Import Daily
+    cycle: daily
+  energy_import_monthly:
+    source: sensor.energy_import_sum
+    name: Energy Import Monthly
+    cycle: monthly
+  energy_consumption_daily:
+    source: sensor.energy_consumption_sum
+    name: Energy Consumption Daily
+    cycle: daily
+  energy_consumption_monthly:
+    source: sensor.energy_consumption_sum
+    name: Energy Consumption Monthly
+    cycle: monthly
+
+spotcast:
+  sp_dc: AQBDRiUKpdUiTsutRl_aDa008Bo2tl1aAAUe1PtprziLxjYgS0_v9VFEzyr3Oy-7RDKNPsc8mYX-jcOOIBhYG4QFdrVc6sC5Iervc4-rqc8q9sM4H6YGzTC3dSClmWJnkzrovc_e6ET3CMhXgqPZdsBIcQnCWhyO
+  sp_key: 5edcafcd-9811-44f4-ba1f-1ec5e279d401
+  country: AT #optional, added in 3.6.24
+
+influxdb:
+  host: 192.168.0.110
+  port: 8086
+  ssl: false
+  verify_ssl: false
+  username: hainfluxuser
+  password: hainfluxuser
+  database: HomeAssistant
+  tags:
+    source: HA
+  tags_attributes:
+    - friendly_name
+  default_measurement: state
+  exclude:
+    entities:
+      - zone.home
+    domains:
+      - persistent_notification
+      - person
+  include:
+    domains:
+      - sensor
+      - binary_sensor
+      - sun
+      - light
+      - cover
+    entities:
+      - weather.home

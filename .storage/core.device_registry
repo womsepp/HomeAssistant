@@ -1,0 +1,1317 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "cd30445c3960304a8be224fd475f9dfe"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0f5670b8fa1a632892fd034b25c8d7e4",
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "7391c66968b4bfa494d5f7220424d2e3"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d0fb7ace26ab22ac6b860561be14134a",
+        "identifiers": [
+          [
+            "mobile_app",
+            "2e4cd43017fdf7ca"
+          ]
+        ],
+        "manufacturer": "OnePlus",
+        "model": "HD1903",
+        "name_by_user": null,
+        "name": "OnePlus",
+        "sw_version": "31",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c1d96791307902f9f6fd29fb2ee12b88"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e545cee627d598f0ffaec71b5b9c0f29",
+        "identifiers": [
+          [
+            "mobile_app",
+            "c5974bb706818d2e"
+          ]
+        ],
+        "manufacturer": "asus",
+        "model": "Nexus 7",
+        "name_by_user": null,
+        "name": "Nexus 7",
+        "sw_version": "32",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "dca709d39537ccc96304d76a2c5af51e"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "4992aaab9a8fb25804784fc6050f74c9",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "sw_version": "1.32.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c4b58cc5c0a878076470ddda06a77d49"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e11384099ffeb042d96944459cde1a88",
+        "identifiers": [
+          [
+            "mobile_app",
+            "B1A1DD47-6F3B-4AFF-B0FF-73F91CA7D826"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone10,6",
+        "name_by_user": null,
+        "name": "iPhone von Maria",
+        "sw_version": "16.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "92a67b4ac3dadfa93d3697160e77a18c"
+        ],
+        "configuration_url": "https://www.speedtest.net/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "cac2820b636a96f95251af7a7813ea6f",
+        "identifiers": [
+          [
+            "speedtestdotnet",
+            "92a67b4ac3dadfa93d3697160e77a18c"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "SpeedTest",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "8507589ba9a83aa99af3e47c65994bc2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "41c68ab5ecfcb98e14f2b1acf7b36352",
+        "identifiers": [
+          [
+            "cpuspeed",
+            "8507589ba9a83aa99af3e47c65994bc2"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "CPU Speed",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "8d3c2e5baf85994564b1129add0b15fb"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "aa82708cda641d086dd10258bd3c6c0e",
+        "identifiers": [
+          [
+            "openweathermap",
+            "48.2671099-14.2698473"
+          ]
+        ],
+        "manufacturer": "OpenWeather",
+        "model": null,
+        "name_by_user": null,
+        "name": "OpenWeatherMap",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_duckdns",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "53bfe1a3eeaff4f01ea5e10d4e942049",
+        "identifiers": [
+          [
+            "hassio",
+            "core_duckdns"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Duck DNS",
+        "sw_version": "1.15.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_sonweb",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "622c5450a95e7bec621a90a8733b1062",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_sonweb"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "TasmoAdmin",
+        "sw_version": "0.24.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "c34c37b16149825eb039f729afea8bc9",
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name_by_user": null,
+        "name": "Home Assistant Core",
+        "sw_version": "2023.6.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "699c6e2ee5317737ab17a0ba97b6b18e",
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name_by_user": null,
+        "name": "Home Assistant Supervisor",
+        "sw_version": "2023.06.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "8f40e1b4b6518ee27a3972d389302704",
+        "identifiers": [
+          [
+            "hassio",
+            "OS"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Operating System",
+        "name_by_user": null,
+        "name": "Home Assistant Operating System",
+        "sw_version": "10.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "fa2a2286904aed91c0b9e4fd637e2c72"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "upnp",
+            "uuid:4e8a6908-9d4d-48c6-b16a-1ecd89dd87e2"
+          ]
+        ],
+        "disabled_by": "config_entry",
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7e5e80f2c94ef235c057715f927e5971",
+        "identifiers": [
+          [
+            "upnp",
+            "uuid:4e8a6908-9d4d-48c6-b16a-1ecd89dd87e2::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+          ],
+          [
+            "upnp_serial_number",
+            "See IMEI"
+          ],
+          [
+            "upnp_host",
+            "192.168.0.1"
+          ]
+        ],
+        "manufacturer": "ZTE",
+        "model": "MBB",
+        "name_by_user": null,
+        "name": "ZTE UPnP",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "05a1346db71b7b52b0dca63d697484b3"
+        ],
+        "configuration_url": "http://192.168.0.201",
+        "connections": [
+          [
+            "mac",
+            "8c:f6:81:dc:76:56"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1 (SHMOS-02)",
+        "id": "155d1dea0ae53fbb2b75bdfbebb80de9",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Motion 2",
+        "name_by_user": null,
+        "name": "Wohnzimmer Bewegungsmelder",
+        "sw_version": "",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "0d82a499c65e572e35cfd6125fa83423"
+        ],
+        "configuration_url": "http://192.168.0.203",
+        "connections": [
+          [
+            "mac",
+            "c0:49:ef:8d:23:a8"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2 (SNSW-102P16EU)",
+        "id": "a35d9a65e20e00a55354d3d967729092",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 2PM",
+        "name_by_user": "shelly2pm-schaltschrank",
+        "name": "shellyplus2pm-c049ef8d23a8",
+        "sw_version": "20230308-091102/0.14.1-g22a4cb7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "b7280c3df0870722252854a4af3d9394",
+          "e11db3ce6529077170012d87732bc14f"
+        ],
+        "configuration_url": "http://192.168.0.204",
+        "connections": [
+          [
+            "mac",
+            "c0:49:ef:8d:38:a4"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2 (SNSW-102P16EU)",
+        "id": "702d93311c653d4643dd0cfa410265f6",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 2PM",
+        "name_by_user": null,
+        "name": "WohnzimmerLicht",
+        "sw_version": "20230308-091102/0.14.1-g22a4cb7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_mariadb",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "405a109d196efe3835a2bbe37da6bd7e",
+        "identifiers": [
+          [
+            "hassio",
+            "core_mariadb"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "MariaDB",
+        "sw_version": "2.6.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "67845ebe005ce6f502edf273d5a10037"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a2c6aca4240429c1086eedbe1e44932d",
+        "identifiers": [
+          [
+            "webostv",
+            "60fb5fe2-1dac-0ce8-442e-9b07c1a96b42"
+          ]
+        ],
+        "manufacturer": "LG",
+        "model": "55UK6750PLD",
+        "name_by_user": null,
+        "name": "LG webOS Smart TV",
+        "sw_version": "05.50.10",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "832475b15b06583a2c174cd29bdd3089"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "1",
+        "id": "9bf9258476980d5fad5b680803af8871",
+        "identifiers": [
+          [
+            "homekit_controller:accessory-id",
+            "C6:B7:39:B6:BC:1D:aid:1"
+          ]
+        ],
+        "manufacturer": "LG Electronics",
+        "model": "55UK6750PLD",
+        "name_by_user": null,
+        "name": "LG webOS TV E03D",
+        "sw_version": "05.50.10",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "a602710bb411564d21f28ea48091e350"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a0888083c89c4b950ac14d77ff6e76e5",
+        "identifiers": [
+          [
+            "cast",
+            "b8b682673a44325160e367220dcace3c"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Chromecast Audio",
+        "name_by_user": null,
+        "name": "Küche",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "2f54cdb7c4372cb8e340735cd373bfb5",
+        "identifiers": [
+          [
+            "hassio",
+            "host"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Host",
+        "name_by_user": null,
+        "name": "Home Assistant Host",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "f22bc027ac9322739cc539086bc5db02"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "a872374cc306e4a962aa146d9abd7e09",
+        "identifiers": [
+          [
+            "sun",
+            "f22bc027ac9322739cc539086bc5db02"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "78f59a0a81abcf3e6e74bf6d45c5b69e"
+        ],
+        "configuration_url": "https://open.spotify.com",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0739feae04c7d7f829399c500a7f3e2d",
+        "identifiers": [
+          [
+            "spotify",
+            "hugo_boi"
+          ]
+        ],
+        "manufacturer": "Spotify AB",
+        "model": "Spotify premium",
+        "name_by_user": null,
+        "name": "Spotify hugo_boi",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "ecf3d0256d21f24b8537e7e2afa0d32c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "874d6095d0404477a8e128a5f806396a",
+        "identifiers": [
+          [
+            "uptime",
+            "ecf3d0256d21f24b8537e7e2afa0d32c"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Uptime",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "eccb61a5c17f876e5e33e4b88f6d010c"
+        ],
+        "configuration_url": "http://192.168.0.94",
+        "connections": [
+          [
+            "mac",
+            "50:02:91:f9:75:a7"
+          ]
+        ],
+        "disabled_by": "config_entry",
+        "entry_type": null,
+        "hw_version": "esp8266",
+        "id": "c079869a845f001d818077317654e886",
+        "identifiers": [
+          [
+            "wled",
+            "500291f975a7"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
+        "name_by_user": null,
+        "name": "WLED",
+        "sw_version": "0.13.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "6c8a40d2a7e5749c951549a7ff6c7328"
+        ],
+        "configuration_url": "https://jcwillox.github.io/hass-auto-backup",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "d76e604b9214478aaec051da70ed3e99",
+        "identifiers": [
+          [
+            "auto_backup",
+            "6c8a40d2a7e5749c951549a7ff6c7328"
+          ]
+        ],
+        "manufacturer": "Auto Backup",
+        "model": null,
+        "name_by_user": null,
+        "name": "Auto Backup",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "e0:79:8d:ff:fe:93:da:99"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "efbd8b7b636c98a16ef7eefab5ce1916",
+        "identifiers": [
+          [
+            "zha",
+            "e0:79:8d:ff:fe:93:da:99"
+          ]
+        ],
+        "manufacturer": "ZHA",
+        "model": "EZSP = Silicon Labs EmberZNet protocol: Elelabs, HUSBZB-1, Telegesis",
+        "name_by_user": null,
+        "name": "Zigbee Coordinator",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "f60115e38021b095701249091f745367",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_vscode"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Studio Code Server",
+        "sw_version": "5.6.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_nodered",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e932dc1be244b6efd66f887a10fef31f",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_nodered"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Node-RED",
+        "sw_version": "14.2.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_ssh",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "944b4f776d27a132ea11c34505334c4a",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_ssh"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Advanced SSH & Web Terminal",
+        "sw_version": "15.0.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:29:19:3b:11"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ecfa6a4c15c547a12051ae0a9c2187c4",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:29:19:3b:11"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "TH01",
+        "name_by_user": "Schlafzimmer",
+        "name": "eWeLink TH01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:29:19:41:cd"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0c611ed75a4ffbf11b0f9639be301d45",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:29:19:41:cd"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "TH01",
+        "name_by_user": "Temperatur Bad",
+        "name": "eWeLink TH01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "homeassistant",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:29:28:4a:c9"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6bcf6f47ede85611bacfa305b14c38ec",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:29:28:4a:c9"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "WB01",
+        "name_by_user": "ZigBee Taster",
+        "name": "eWeLink WB01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:28:92:ef:2b"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c1e2246e2f756ec733472150038e3495",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:28:92:ef:2b"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "DS01",
+        "name_by_user": "Türschalter",
+        "name": "eWeLink DS01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "eingangsbereich",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:29:19:bf:ea"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d2535e1a84ec66680135a8db2215162b",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:29:19:bf:ea"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "MS01",
+        "name_by_user": "Bewegungsmelder Eingang",
+        "name": "eWeLink MS01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "9f45e0911d664d2c7e0e153551309229"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:12:4b:00:29:1a:21:8a"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e69bb06ad127123de15ae05052f6a5e1",
+        "identifiers": [
+          [
+            "zha",
+            "00:12:4b:00:29:1a:21:8a"
+          ]
+        ],
+        "manufacturer": "eWeLink",
+        "model": "MS01",
+        "name_by_user": "Bewegungsmelder Bad",
+        "name": "eWeLink MS01",
+        "sw_version": null,
+        "via_device_id": "efbd8b7b636c98a16ef7eefab5ce1916"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "d5524c85496958faefaddfae54c7e48b"
+        ],
+        "configuration_url": "http://192.168.0.206",
+        "connections": [
+          [
+            "mac",
+            "34:94:54:6a:ef:2d"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1 (SHBDUO-1)",
+        "id": "3cb493211074536af96a87670a6d1d7b",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly DUO",
+        "name_by_user": "Schlafzimmer Licht",
+        "name": "Schlafzimmer Licht",
+        "sw_version": "20221027-090712/v1.12.1-ga9117d3",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_grafana",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "2d5bcbedc11b876142d7df2896bc1fc9",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_grafana"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Grafana",
+        "sw_version": "8.3.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_emqx",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "d747d6de3f0adeb818b1e75fde06e6c2",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_emqx"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "EMQX",
+        "sw_version": "0.2.10",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_influxdb",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "11052a340646002b1bdc4c4e533479c1",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_influxdb"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "InfluxDB",
+        "sw_version": "4.7.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnung",
+        "config_entries": [
+          "9e9a66bae7eb9ff0efab2effc93ea30e"
+        ],
+        "configuration_url": "http://192.168.0.202",
+        "connections": [
+          [
+            "mac",
+            "48:55:19:d9:a4:22"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1 (SHEM-3)",
+        "id": "fd4c0492aeea56e7478d1e2b962b996e",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 3EM",
+        "name_by_user": "shelly3em",
+        "name": "Shelly Energy Meter",
+        "sw_version": "20221027-110030/v1.12.1-ga9117d3",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "48f4005f9f9616088ebc8c4e0353ce7f"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "bc:dd:c2:14:48:c9"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ea55211d7f32a905bcfc32848ca2860d",
+        "identifiers": [
+          [
+            "mqtt",
+            "1448C9"
+          ]
+        ],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "Lautsprecher",
+        "sw_version": "8.1.0.2(tasmota)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_uptime-kuma",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "8aaa22d7f06ba5ee5405118d1a3e8dc6",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_uptime-kuma"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Uptime Kuma",
+        "sw_version": "0.7.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "07999723157bc3c1b57dcbccea8d4de3"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5c935ba6f27b9395950fbfe4069d106f",
+        "identifiers": [
+          [
+            "mobile_app",
+            "c09f4690ba8f9f47"
+          ]
+        ],
+        "manufacturer": "OnePlus",
+        "model": "HD1903",
+        "name_by_user": null,
+        "name": "OnePlus",
+        "sw_version": "31",
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [
+          "fbdab80fd3e6e3ca5900595ed2ff4043"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "shelly",
+            "C049EF8D38A4"
+          ]
+        ],
+        "id": "77be63ea1539de001c57f6a2c8807bc4",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "fbdab80fd3e6e3ca5900595ed2ff4043"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "shelly",
+            "C049EF8D23A8"
+          ]
+        ],
+        "id": "e0e0bc7b88efaca80ceb9c4f53def525",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "fbdab80fd3e6e3ca5900595ed2ff4043"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "shelly",
+            "485519D9A422"
+          ]
+        ],
+        "id": "0ea0a6ca7d8ea8301977230ce9538c6a",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_nginxproxymanager"
+          ]
+        ],
+        "id": "de462b96ba114542ebb2bf44b59970c6",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_ssh"
+          ]
+        ],
+        "id": "c90c9a348d199b180aa7fb35c0f5eebb",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_nginx_proxy"
+          ]
+        ],
+        "id": "b123061008a0af2c3cd459b45e08dbda",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_spotify"
+          ]
+        ],
+        "id": "0e0145c192806274c9ad1e3850a71ecd",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_configurator"
+          ]
+        ],
+        "id": "0a472cccd83203976134a09088f8f13a",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "de838cd8_raspberrymatic"
+          ]
+        ],
+        "id": "b0b3d103a8ed408239a1f99d2d223315",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "47701997_rhasspy_junior"
+          ]
+        ],
+        "id": "c70137e3bd4bc601e4ac92eab876f748",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_motioneye"
+          ]
+        ],
+        "id": "bc04781922348a6f59c5dd5309b55e10",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d86eefe03bcfee8d3f1cba73ad82e134"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_letsencrypt"
+          ]
+        ],
+        "id": "994053ae4439fc928aafa87bcad7982e",
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

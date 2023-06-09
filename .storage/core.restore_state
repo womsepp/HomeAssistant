@@ -1,0 +1,2920 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.dominik",
+        "state": "home",
+        "attributes": {
+          "editable": true,
+          "id": "dominik",
+          "latitude": 48.2784992,
+          "longitude": 14.3110667,
+          "gps_accuracy": 22,
+          "source": "device_tracker.oneplus",
+          "user_id": "d9d673acf530496eb784356d2ca6e60a",
+          "device_trackers": [
+            "device_tracker.oneplus"
+          ],
+          "entity_picture": "/api/image/serve/b3be59effb5508a698157fdb3597ab4b/512x512",
+          "friendly_name": "Dominik"
+        },
+        "last_changed": "2023-06-09T11:02:25.247293+00:00",
+        "last_updated": "2023-06-09T11:02:25.247293+00:00",
+        "context": {
+          "id": "01H2FX4RPZP81ETGVHKV099PKA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "person.maria",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "maria",
+          "user_id": "84d72e86f992414aaf8bfbfadbe32466",
+          "device_trackers": [
+            "device_tracker.iphone_von_maria"
+          ],
+          "entity_picture": "/api/image/serve/3dd2d0af92e23f2848bb3d5b6b36a36b/512x512",
+          "friendly_name": "Maria"
+        },
+        "last_changed": "2023-06-09T07:40:11.843474+00:00",
+        "last_updated": "2023-06-09T07:40:43.414154+00:00",
+        "context": {
+          "id": "01H2FHKEGPZ2VSD6472K6MBBWJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "person.nodered",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "nodered",
+          "device_trackers": [],
+          "friendly_name": "NodeRED"
+        },
+        "last_changed": "2023-06-09T07:40:11.843740+00:00",
+        "last_updated": "2023-06-09T07:40:43.414218+00:00",
+        "context": {
+          "id": "01H2FHKEGPXCD930CF3DM1J3B4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_supervisor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2023.06.1",
+          "in_progress": false,
+          "latest_version": "2023.06.1",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/supervisor/releases/tag/2023.06.1",
+          "skipped_version": null,
+          "title": "Home Assistant Supervisor",
+          "entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+          "friendly_name": "Home Assistant Supervisor Update",
+          "supported_features": 1
+        },
+        "last_changed": "2023-06-09T07:40:23.961678+00:00",
+        "last_updated": "2023-06-09T07:40:23.961678+00:00",
+        "context": {
+          "id": "01H2FHJVGS65XXCE6EE0KE856R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_core_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2023.6.1",
+          "in_progress": false,
+          "latest_version": "2023.6.1",
+          "release_summary": null,
+          "release_url": "https://www.home-assistant.io/latest-release-notes/",
+          "skipped_version": null,
+          "title": "Home Assistant Core",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Core Update",
+          "supported_features": 11
+        },
+        "last_changed": "2023-06-09T07:40:23.961958+00:00",
+        "last_updated": "2023-06-09T07:40:23.961958+00:00",
+        "context": {
+          "id": "01H2FHJVGS9P7CFTY7M9807KWZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.duck_dns_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "1.15.0",
+          "in_progress": false,
+          "latest_version": "1.15.0",
+          "release_summary": "# Changelog\n\n## 1.15.0\n\n- Use Supervisor API to detect IPv6 host addresses, selectable by interface\n- Split IPv4 and IPv6 updates as duckdns skips v4 detection with v6 present\n- Fix misleading help text regarding IPv6 address autodetection\n- Disable Docke",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Duck DNS",
+          "entity_picture": "/api/hassio/addons/core_duckdns/icon",
+          "friendly_name": "Duck DNS Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.962153+00:00",
+        "last_updated": "2023-06-09T07:40:23.962153+00:00",
+        "context": {
+          "id": "01H2FHJVGTZ8TS7MNAHAEYNHTZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.tasmoadmin_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.24.4",
+          "in_progress": false,
+          "latest_version": "0.24.4",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update alpine_3_18/nginx to v1.24.0-r4 @renovate ([#315](https://github.com/hassio-addons/addon-tasmoadmin/pull/315))\n- ⬆️ Update alpine_3_18/nginx to v1.24.0-r5 @renovate ([#316](https://github.com/hassio",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "TasmoAdmin",
+          "entity_picture": "/api/hassio/addons/a0d7b954_sonweb/icon",
+          "friendly_name": "TasmoAdmin Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.963819+00:00",
+        "last_updated": "2023-06-09T07:40:23.963819+00:00",
+        "context": {
+          "id": "01H2FHJVGVP1EC7GBB0EJF6S0K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.mariadb_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2.6.1",
+          "in_progress": false,
+          "latest_version": "2.6.1",
+          "release_summary": "# Changelog\n\n## 2.6.1\n\n- Use proper log redirection during backup\n\n## 2.6.0\n\n- Migrate add-on layout to S6 Overlay\n- Update to MariaDB version 10.6.12\n\n## 2.5.2\n\n- Update to MariaDB version 10.6.10\n\n## 2.5.1\n\n- Remove deprecated `innodb-buffer-pool-instan",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "MariaDB",
+          "entity_picture": "/api/hassio/addons/core_mariadb/icon",
+          "friendly_name": "MariaDB Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.964056+00:00",
+        "last_updated": "2023-06-09T07:40:23.964056+00:00",
+        "context": {
+          "id": "01H2FHJVGW29G1WC4XXZR41VBF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.studio_code_server_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "5.6.1",
+          "in_progress": false,
+          "latest_version": "5.6.1",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update home-assistant/cli to v4.25.0 @renovate ([#646](https://github.com/hassio-addons/addon-vscode/pull/646))\n- ⬆️ Update esphome to v2023.5.2 @renovate ([#647](https://github.com/hassio-addons/addon-vsc",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Studio Code Server",
+          "entity_picture": "/api/hassio/addons/a0d7b954_vscode/icon",
+          "friendly_name": "Studio Code Server Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.964361+00:00",
+        "last_updated": "2023-06-09T07:40:23.964361+00:00",
+        "context": {
+          "id": "01H2FHJVGW6BHWP5WBRGQT5QGM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.node_red_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "14.2.2",
+          "in_progress": false,
+          "latest_version": "14.2.2",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update alpine_3_18/nginx to v1.24.0-r6 @renovate ([#1612](https://github.com/hassio-addons/addon-node-red/pull/1612))\n- ⬆️ Update node-red-dashboard to v3.5.0 @renovate ([#1613](https://github.com/hassio-a",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Node-RED",
+          "entity_picture": "/api/hassio/addons/a0d7b954_nodered/icon",
+          "friendly_name": "Node-RED Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.964592+00:00",
+        "last_updated": "2023-06-09T07:40:23.964592+00:00",
+        "context": {
+          "id": "01H2FHJVGWSM3M9396ZT1N0N3N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ssh_web_terminal_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "15.0.2",
+          "in_progress": false,
+          "latest_version": "15.0.2",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update yamllint to v1.32.0 @renovate ([#570](https://github.com/hassio-addons/addon-ssh/pull/570))\n- ⬆️ Update home-assistant/cli to v4.26.0 @renovate ([#571](https://github.com/hassio-addons/addon-ssh/pul",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Advanced SSH & Web Terminal",
+          "entity_picture": "/api/hassio/addons/a0d7b954_ssh/icon",
+          "friendly_name": "Advanced SSH & Web Terminal Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.964759+00:00",
+        "last_updated": "2023-06-09T07:40:23.964759+00:00",
+        "context": {
+          "id": "01H2FHJVGW11YFKNPTA2EQ7RGX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.grafana_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "8.3.0",
+          "in_progress": false,
+          "latest_version": "8.3.0",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update grafana/grafana to v9.5.1 @renovate ([#321](https://github.com/hassio-addons/addon-grafana/pull/321))\n- ⬆️ Update Add-on base image to v6.2.6 @renovate ([#324](https://github.com/hassio-addons/addon",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Grafana",
+          "entity_picture": "/api/hassio/addons/a0d7b954_grafana/icon",
+          "friendly_name": "Grafana Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.964914+00:00",
+        "last_updated": "2023-06-09T07:40:23.964914+00:00",
+        "context": {
+          "id": "01H2FHJVGWDY694JTWCMPQXM8N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.emqx_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.2.10",
+          "in_progress": false,
+          "latest_version": "0.2.10",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update emqx/emqx to v5.0.26 @renovate ([#49](https://github.com/hassio-addons/addon-emqx/pull/49))\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "EMQX",
+          "entity_picture": "/api/hassio/addons/a0d7b954_emqx/icon",
+          "friendly_name": "EMQX Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.965060+00:00",
+        "last_updated": "2023-06-09T07:40:23.965060+00:00",
+        "context": {
+          "id": "01H2FHJVGX9PTCR8TSCGBK4PP6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.influxdb_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "4.7.0",
+          "in_progress": false,
+          "latest_version": "4.7.0",
+          "release_summary": "## What’s changed\n\n## ✨ New features\n\n- Add port configuration for backup and restore @frenck ([#287](https://github.com/hassio-addons/addon-influxdb/pull/287))\n\n## 📚 Documentation\n\n- Fix broken URL @wrt54g ([#279](https://github.com/hassio-addons/addon-i",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "InfluxDB",
+          "entity_picture": "/api/hassio/addons/a0d7b954_influxdb/icon",
+          "friendly_name": "InfluxDB Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.965219+00:00",
+        "last_updated": "2023-06-09T07:40:23.965219+00:00",
+        "context": {
+          "id": "01H2FHJVGXFV54EX05JEE5YE79",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.uptime_kuma_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.7.4",
+          "in_progress": false,
+          "latest_version": "0.7.4",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update ghcr.io/hassio-addons/base Docker tag to v14 @renovate ([#77](https://github.com/hassio-addons/addon-uptime-kuma/pull/77))\n- ⬆️ Update apprise to v1.4.0 @renovate ([#78](https://github.com/hassio-ad",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Uptime Kuma",
+          "entity_picture": "/api/hassio/addons/a0d7b954_uptime-kuma/icon",
+          "friendly_name": "Uptime Kuma Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-06-09T07:40:23.965577+00:00",
+        "last_updated": "2023-06-09T07:40:23.965577+00:00",
+        "context": {
+          "id": "01H2FHJVGX20GXGE71FM3YDD1K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_operating_system_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "10.2",
+          "in_progress": false,
+          "latest_version": "10.2",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/operating-system/releases/tag/10.2",
+          "skipped_version": null,
+          "title": "Home Assistant Operating System",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Operating System Update",
+          "supported_features": 3
+        },
+        "last_changed": "2023-06-09T07:40:23.965811+00:00",
+        "last_updated": "2023-06-09T07:40:23.965811+00:00",
+        "context": {
+          "id": "01H2FHJVGXW3TMGG58M90B4AMC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_import_sum",
+        "state": "35.65",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.power_import",
+          "unit_of_measurement": "kWh",
+          "icon": "mdi:chart-histogram",
+          "friendly_name": "energy_import_sum",
+          "device_class": "energy"
+        },
+        "last_changed": "2023-06-09T11:54:57.647052+00:00",
+        "last_updated": "2023-06-09T11:54:57.647052+00:00",
+        "context": {
+          "id": "01H2G04Z7FD2T9AY59FQXEMXY3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "35.65"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.power_import",
+        "last_valid_state": "35.64530788928945555621295668"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "scene.abend_licht",
+        "state": "2023-05-08T18:25:39.310358+00:00",
+        "attributes": {
+          "entity_id": [
+            "light.schlafzimmer_licht"
+          ],
+          "id": "1683568890009",
+          "icon": "mdi:lightbulb-on-outline",
+          "friendly_name": "Schlafzimmerlicht Sonnenuntergang Szene"
+        },
+        "last_changed": "2023-06-09T07:40:25.239482+00:00",
+        "last_updated": "2023-06-09T07:40:25.239482+00:00",
+        "context": {
+          "id": "01H2FHJWRQV2A6B8VCZ2GES24R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "scene.schlafzimmerlicht_sonnenaufgang_szene",
+        "state": "2023-05-09T03:32:16.954355+00:00",
+        "attributes": {
+          "entity_id": [
+            "light.schlafzimmer_licht"
+          ],
+          "id": "1683569293263",
+          "icon": "mdi:lightbulb-on-outline",
+          "friendly_name": "Schlafzimmerlicht Sonnenaufgang Szene "
+        },
+        "last_changed": "2023-06-09T07:40:25.246706+00:00",
+        "last_updated": "2023-06-09T07:40:25.246706+00:00",
+        "context": {
+          "id": "01H2FHJWRYA8YSXVM6BK7QPFAZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "scene.tageslicht",
+        "state": "2023-05-13T06:45:00.683425+00:00",
+        "attributes": {
+          "entity_id": [
+            "light.schlafzimmer_licht"
+          ],
+          "id": "1683569331388",
+          "icon": "mdi:calendar-today",
+          "friendly_name": "Tageslicht"
+        },
+        "last_changed": "2023-06-09T07:40:25.276625+00:00",
+        "last_updated": "2023-06-09T07:40:25.276625+00:00",
+        "context": {
+          "id": "01H2FHJWSWMSZAYY67M7Q9G90P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_boolean.besuch",
+        "state": "off",
+        "attributes": {
+          "editable": true,
+          "icon": "mdi:account-group",
+          "friendly_name": "Besuch"
+        },
+        "last_changed": "2023-06-09T07:40:26.405153+00:00",
+        "last_updated": "2023-06-09T07:40:26.405153+00:00",
+        "context": {
+          "id": "01H2FHJXX5W7CZNKS8QM88VYZ4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_boolean.minimalist_dropdown",
+        "state": "off",
+        "attributes": {
+          "editable": true,
+          "friendly_name": "minimalist_dropdown"
+        },
+        "last_changed": "2023-06-09T07:40:26.405261+00:00",
+        "last_updated": "2023-06-09T07:40:26.405261+00:00",
+        "context": {
+          "id": "01H2FHJXX54JM7ENS5GZPDX4FT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_datetime.weckzeit",
+        "state": "2023-05-05 07:00:00",
+        "attributes": {
+          "has_date": true,
+          "has_time": true,
+          "editable": true,
+          "year": 2023,
+          "month": 5,
+          "day": 5,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "timestamp": 1683262800.0,
+          "icon": "mdi:alarm",
+          "friendly_name": "WeckZeit",
+          "device_class": "timestamp"
+        },
+        "last_changed": "2023-06-09T07:40:26.405810+00:00",
+        "last_updated": "2023-06-09T07:40:26.405810+00:00",
+        "context": {
+          "id": "01H2FHJXX5E3BAY1TW8F81K1T1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.strompreis",
+        "state": "0.43",
+        "attributes": {
+          "initial": null,
+          "editable": true,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "mode": "box",
+          "unit_of_measurement": "EUR /kWh",
+          "icon": "mdi:currency-usd",
+          "friendly_name": "Strompreis"
+        },
+        "last_changed": "2023-06-09T07:40:26.405973+00:00",
+        "last_updated": "2023-06-09T07:40:26.405973+00:00",
+        "context": {
+          "id": "01H2FHJXX55XMF3YSR0BYSNFA0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.total_energy_spent",
+        "state": "unavailable",
+        "attributes": {
+          "state_class": "total",
+          "icon": "mdi:chart-histogram",
+          "friendly_name": "Gesamt Energieverbrauch"
+        },
+        "last_changed": "2023-06-09T07:40:27.132007+00:00",
+        "last_updated": "2023-06-09T07:40:27.132007+00:00",
+        "context": {
+          "id": "01H2FHJYKWQ5QW3PB53KVXSEK3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null,
+        "source_entity": "sensor.gesamt_verbrauch_in_w",
+        "last_valid_state": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.wohnungenergieverbrauch",
+        "state": "16271.71",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.gesamtenergieverbrauchwohnung",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:chart-histogram",
+          "friendly_name": "WohnungEnergieVerbrauch"
+        },
+        "last_changed": "2023-06-09T07:40:27.140664+00:00",
+        "last_updated": "2023-06-09T07:40:27.140664+00:00",
+        "context": {
+          "id": "01H2FHJYM4C5NZQ0109CDRPSYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "16271.71"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.gesamtenergieverbrauchwohnung",
+        "last_valid_state": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "alarm_control_panel.zuhause",
+        "state": "armed_away",
+        "attributes": {
+          "code_format": "number",
+          "changed_by": null,
+          "code_arm_required": true,
+          "friendly_name": "Zuhause",
+          "supported_features": 63
+        },
+        "last_changed": "2023-06-09T07:40:28.039012+00:00",
+        "last_updated": "2023-06-09T07:40:28.039012+00:00",
+        "context": {
+          "id": "01H2FHJZG74Q6RZ5K0Q81WT363",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.1677440498028",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-02-26T20:40:02.783163+00:00",
+          "mode": "restart",
+          "current": 0,
+          "friendly_name": "Confirmable Notification"
+        },
+        "last_changed": "2023-06-09T07:40:29.661785+00:00",
+        "last_updated": "2023-06-09T07:40:29.661785+00:00",
+        "context": {
+          "id": "01H2FHK12X36FE1FZSPZGKG6RZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.start_spotify_abrissparty",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-05-01T07:25:32.025298+00:00",
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:file-music",
+          "friendly_name": "Start Spotify - Abrissparty"
+        },
+        "last_changed": "2023-06-09T07:40:29.661930+00:00",
+        "last_updated": "2023-06-09T07:40:29.661930+00:00",
+        "context": {
+          "id": "01H2FHK12XEVGDAZJHW8421GBK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.shellymotion_motion",
+        "state": "off",
+        "attributes": {
+          "device_class": "motion",
+          "friendly_name": "Bewegung"
+        },
+        "last_changed": "2023-06-09T08:27:47.606860+00:00",
+        "last_updated": "2023-06-09T08:27:47.606860+00:00",
+        "context": {
+          "id": "01H2FM9MGP6XB7HWECTDHZPQE4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.shellymotion_vibration",
+        "state": "off",
+        "attributes": {
+          "device_class": "vibration",
+          "icon": "mdi:motion-sensor",
+          "friendly_name": "Vibration"
+        },
+        "last_changed": "2023-06-09T07:40:29.750163+00:00",
+        "last_updated": "2023-06-09T07:40:29.750163+00:00",
+        "context": {
+          "id": "01H2FHK15P20NJAENTRYW6MHXX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.shellymotion_temperature",
+        "state": "26.9",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Wohnzimmer temperatur"
+        },
+        "last_changed": "2023-06-09T10:38:51.687559+00:00",
+        "last_updated": "2023-06-09T10:38:51.687559+00:00",
+        "context": {
+          "id": "01H2FVSM97HE2NPMKEN1DFE0BB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.shellymotion_luminosity",
+        "state": "2494",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "lx",
+          "device_class": "illuminance",
+          "friendly_name": "Helligkeit"
+        },
+        "last_changed": "2023-06-09T11:08:52.622294+00:00",
+        "last_updated": "2023-06-09T11:08:52.622294+00:00",
+        "context": {
+          "id": "01H2FXGK0EGVBW4H8CKV64R8KR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.shellymotion_battery",
+        "state": "99",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Batterie"
+        },
+        "last_changed": "2023-06-09T07:40:29.752009+00:00",
+        "last_updated": "2023-06-09T07:40:34.388560+00:00",
+        "context": {
+          "id": "01H2FHK5PMDXP33XZPJQ0XS90J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_ping",
+        "state": "42",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Vienna",
+          "server_country": "Austria",
+          "server_id": "16472",
+          "unit_of_measurement": "ms",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "SpeedTest Ping"
+        },
+        "last_changed": "2023-06-09T10:42:23.773291+00:00",
+        "last_updated": "2023-06-09T10:42:23.773291+00:00",
+        "context": {
+          "id": "01H2FW03CXG8TWFTTF9N4DFQE1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_download",
+        "state": "22.52",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Vienna",
+          "server_country": "Austria",
+          "server_id": "16472",
+          "bytes_received": 30057473,
+          "unit_of_measurement": "Mbit/s",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "SpeedTest Download"
+        },
+        "last_changed": "2023-06-09T10:42:23.773556+00:00",
+        "last_updated": "2023-06-09T10:42:23.773556+00:00",
+        "context": {
+          "id": "01H2FW03CXN7E4SA6X083VR0RX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_upload",
+        "state": "13.22",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Vienna",
+          "server_country": "Austria",
+          "server_id": "16472",
+          "bytes_sent": 16596992,
+          "unit_of_measurement": "Mbit/s",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "SpeedTest Upload"
+        },
+        "last_changed": "2023-06-09T10:42:23.773866+00:00",
+        "last_updated": "2023-06-09T10:42:23.773866+00:00",
+        "context": {
+          "id": "01H2FW03CXS5J4Z8ST9N1ZN2ZY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "media_player.lg_webos_smart_tv",
+        "state": "off",
+        "attributes": {
+          "source_list": [
+            "Live TV"
+          ],
+          "assumed_state": true,
+          "device_class": "tv",
+          "friendly_name": "LG webOS Smart TV",
+          "supported_features": 24381
+        },
+        "last_changed": "2023-06-09T07:40:30.612181+00:00",
+        "last_updated": "2023-06-09T07:40:30.612181+00:00",
+        "context": {
+          "id": "01H2FHK20M7KGSX3RY5T84MT4Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_import_daily",
+        "state": "1.90",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_import_sum",
+          "status": "collecting",
+          "last_period": "4.49",
+          "last_valid_state": "35.65",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-06-08T22:00:00.026694+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Energy Import Daily"
+        },
+        "last_changed": "2023-06-09T11:54:57.648641+00:00",
+        "last_updated": "2023-06-09T11:54:57.648641+00:00",
+        "context": {
+          "id": "01H2G04Z7GYVNXQ9JTZJJXFJQN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "1.90"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "4.49",
+        "last_reset": "2023-06-08T22:00:00.026694+00:00",
+        "last_valid_state": "35.65",
+        "status": "collecting"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_import_monthly",
+        "state": "34.01",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_import_sum",
+          "status": "collecting",
+          "last_period": "92.18",
+          "last_valid_state": "35.65",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-05-31T22:02:42.869913+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Energy Import Monthly"
+        },
+        "last_changed": "2023-06-09T11:54:57.648933+00:00",
+        "last_updated": "2023-06-09T11:54:57.648933+00:00",
+        "context": {
+          "id": "01H2G04Z7G1RTQ6FST3SFVK3Z5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "34.01"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "92.18",
+        "last_reset": "2023-05-31T22:02:42.869913+00:00",
+        "last_valid_state": "35.65",
+        "status": "collecting"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_consumption_daily",
+        "state": "0",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_consumption_sum",
+          "status": "collecting",
+          "last_period": "0",
+          "last_valid_state": "None",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-06-08T22:00:00.023912+00:00",
+          "icon": "mdi:counter",
+          "friendly_name": "Energy Consumption Daily"
+        },
+        "last_changed": "2023-06-09T07:40:30.639894+00:00",
+        "last_updated": "2023-06-09T07:40:30.639894+00:00",
+        "context": {
+          "id": "01H2FHK21FYDEJ93QWTXPZEEYS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0,
+        "native_unit_of_measurement": null,
+        "last_period": "0",
+        "last_reset": "2023-06-08T22:00:00.023912+00:00",
+        "last_valid_state": null,
+        "status": "collecting"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_consumption_monthly",
+        "state": "0",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_consumption_sum",
+          "status": "collecting",
+          "last_period": "0",
+          "last_valid_state": "None",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-05-31T22:02:42.880114+00:00",
+          "icon": "mdi:counter",
+          "friendly_name": "Energy Consumption Monthly"
+        },
+        "last_changed": "2023-06-09T07:40:30.641358+00:00",
+        "last_updated": "2023-06-09T07:40:30.641358+00:00",
+        "context": {
+          "id": "01H2FHK21HMB4RZCASZK7CPMP5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0,
+        "native_unit_of_measurement": null,
+        "last_period": "0",
+        "last_reset": "2023-05-31T22:02:42.880114+00:00",
+        "last_valid_state": null,
+        "status": "collecting"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.tagesverbrauch",
+        "state": "0",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.total_energy_spent",
+          "status": "collecting",
+          "last_period": "0",
+          "last_valid_state": "286.139",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-06-08T22:00:00.025092+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Tagesverbrauch"
+        },
+        "last_changed": "2023-06-09T07:40:30.644104+00:00",
+        "last_updated": "2023-06-09T07:40:30.644104+00:00",
+        "context": {
+          "id": "01H2FHK21MEJNCG0D8QD0VTSGB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0,
+        "native_unit_of_measurement": "kWh",
+        "last_period": "0",
+        "last_reset": "2023-06-08T22:00:00.025092+00:00",
+        "last_valid_state": "286.139",
+        "status": "collecting"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.shelly2pm_schaltschrank_reboot",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "shelly2pm-schaltschrank Reboot"
+        },
+        "last_changed": "2023-06-09T07:40:30.711034+00:00",
+        "last_updated": "2023-06-09T07:40:30.711034+00:00",
+        "context": {
+          "id": "01H2FHK23Q1ZQFVV4JQ884JW70",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.shelly2pm_schaltschrank_firmware_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.14.1",
+          "in_progress": false,
+          "latest_version": "0.14.1",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": null,
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/shelly/icon.png",
+          "friendly_name": "shelly2pm-schaltschrank firmware update",
+          "supported_features": 5
+        },
+        "last_changed": "2023-06-09T07:40:30.719564+00:00",
+        "last_updated": "2023-06-09T07:40:30.719564+00:00",
+        "context": {
+          "id": "01H2FHK23Z56G7JK53ESEP02MC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.wohnzimmerlicht_reboot",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "WohnzimmerLicht Reboot"
+        },
+        "last_changed": "2023-06-09T07:40:30.724053+00:00",
+        "last_updated": "2023-06-09T07:40:30.724053+00:00",
+        "context": {
+          "id": "01H2FHK244EQBM1887Q1VCEGCR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.wohnzimmerlicht_firmware_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.14.1",
+          "in_progress": false,
+          "latest_version": "0.14.1",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": null,
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/shelly/icon.png",
+          "friendly_name": "WohnzimmerLicht firmware update",
+          "supported_features": 5
+        },
+        "last_changed": "2023-06-09T07:40:30.730816+00:00",
+        "last_updated": "2023-06-09T07:40:30.730816+00:00",
+        "context": {
+          "id": "01H2FHK24AD56PEA0ZY3M0YMFE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_battery_level",
+        "state": "78",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-70",
+          "friendly_name": "Nexus 7 Battery Level"
+        },
+        "last_changed": "2023-06-09T07:40:30.740653+00:00",
+        "last_updated": "2023-06-09T07:40:30.740653+00:00",
+        "context": {
+          "id": "01H2FHK24M9R1Y0QT9EYS1ZMNV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 78,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_battery_state",
+        "state": "not_charging",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "Nexus 7 Battery State"
+        },
+        "last_changed": "2023-06-09T07:40:30.740851+00:00",
+        "last_updated": "2023-06-09T07:40:30.740851+00:00",
+        "context": {
+          "id": "01H2FHK24M8AYE7X5PSQC5298Q",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "not_charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "Nexus 7 Charger Type"
+        },
+        "last_changed": "2023-06-09T07:40:30.741020+00:00",
+        "last_updated": "2023-06-09T07:40:30.741020+00:00",
+        "context": {
+          "id": "01H2FHK24NVEJ1YHF3XEGCMMP3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_battery_health",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "Nexus 7 Battery Health"
+        },
+        "last_changed": "2023-06-09T07:40:30.741197+00:00",
+        "last_updated": "2023-06-09T07:40:30.741197+00:00",
+        "context": {
+          "id": "01H2FHK24NQVAQH6THRQJ6KJNM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_battery_temperature",
+        "state": "18.0",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "Nexus 7 Battery Temperature"
+        },
+        "last_changed": "2023-06-09T07:40:30.741379+00:00",
+        "last_updated": "2023-06-09T07:40:30.741379+00:00",
+        "context": {
+          "id": "01H2FHK24NTYAHMV5SMS3EC1DS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 18.0,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.nexus_7_battery_power",
+        "state": "0.0",
+        "attributes": {
+          "state_class": "measurement",
+          "current": -0.000086,
+          "voltage": 4.036,
+          "unit_of_measurement": "W",
+          "device_class": "power",
+          "icon": "mdi:battery-minus",
+          "friendly_name": "Nexus 7 Battery Power"
+        },
+        "last_changed": "2023-06-09T07:40:30.741551+00:00",
+        "last_updated": "2023-06-09T07:40:30.741551+00:00",
+        "context": {
+          "id": "01H2FHK24NJN10G7S4K2RG6FDB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0.0,
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.nexus_7_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "Nexus 7 Is Charging"
+        },
+        "last_changed": "2023-06-09T07:40:30.743109+00:00",
+        "last_updated": "2023-06-09T07:40:30.743109+00:00",
+        "context": {
+          "id": "01H2FHK24QT0RPR4XREHBDDHWY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.nexus_7",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Nexus 7"
+        },
+        "last_changed": "2023-06-09T07:40:30.744683+00:00",
+        "last_updated": "2023-06-09T07:40:30.744683+00:00",
+        "context": {
+          "id": "01H2FHK24RA1H5S75CECYB4E5V",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_storage",
+        "state": "0.00",
+        "attributes": {
+          "Available": "357,4 MB",
+          "Available (Important)": "362,5 MB",
+          "Available (Opportunistic)": "0,0 MB",
+          "Total": "63,89 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "iPhone von Maria Storage"
+        },
+        "last_changed": "2023-06-09T07:40:30.745853+00:00",
+        "last_updated": "2023-06-09T11:05:22.770300+00:00",
+        "context": {
+          "id": "01H2FXA62JQ63PEAM6Y4HS4TKM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "0.00",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_geocoded_location",
+        "state": "Unknown",
+        "attributes": {
+          "icon": "mdi:map",
+          "friendly_name": "iPhone von Maria Geocoded Location"
+        },
+        "last_changed": "2023-06-09T07:40:30.746037+00:00",
+        "last_updated": "2023-06-09T07:40:30.746037+00:00",
+        "context": {
+          "id": "01H2FHK24TVGCR0088YVEYB8AB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_ssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "iPhone von Maria SSID"
+        },
+        "last_changed": "2023-06-09T11:02:20.093351+00:00",
+        "last_updated": "2023-06-09T11:02:20.093351+00:00",
+        "context": {
+          "id": "01H2FX4KNXZ2BEFW88V79SSY5R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": true,
+          "icon": "mdi:battery-30",
+          "friendly_name": "iPhone von Maria Battery State"
+        },
+        "last_changed": "2023-06-09T07:40:30.746550+00:00",
+        "last_updated": "2023-06-09T11:02:20.093029+00:00",
+        "context": {
+          "id": "01H2FX4KNXA3WJX2N1F2YHMPCR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_battery_level",
+        "state": "37",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-30",
+          "friendly_name": "iPhone von Maria Battery Level"
+        },
+        "last_changed": "2023-06-09T11:05:22.769943+00:00",
+        "last_updated": "2023-06-09T11:05:22.769943+00:00",
+        "context": {
+          "id": "01H2FXA62H8KJXJD9GNG2DPB2A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 37,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_last_update_trigger",
+        "state": "Periodic",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "iPhone von Maria Last Update Trigger"
+        },
+        "last_changed": "2023-06-09T11:03:20.856675+00:00",
+        "last_updated": "2023-06-09T11:03:20.856675+00:00",
+        "context": {
+          "id": "01H2FX6F0RDCTZVEE3BSK0SX6P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Periodic",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_connection_type",
+        "state": "Cellular",
+        "attributes": {
+          "Cellular Technology": "4G",
+          "icon": "mdi:signal",
+          "friendly_name": "iPhone von Maria Connection Type"
+        },
+        "last_changed": "2023-06-09T11:02:20.093705+00:00",
+        "last_updated": "2023-06-09T11:02:20.093705+00:00",
+        "context": {
+          "id": "01H2FX4KNXF8V6T1FK91X81D2N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Cellular",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_activity",
+        "state": "Unknown",
+        "attributes": {
+          "Confidence": "High",
+          "Types": [
+            "Unknown"
+          ],
+          "icon": "mdi:help-circle",
+          "friendly_name": "iPhone von Maria Activity"
+        },
+        "last_changed": "2023-06-09T11:02:20.091043+00:00",
+        "last_updated": "2023-06-09T11:02:20.091043+00:00",
+        "context": {
+          "id": "01H2FX4KNVYTSVNZQCZ0X9SQ9F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_distance",
+        "state": "1717",
+        "attributes": {
+          "unit_of_measurement": "m",
+          "icon": "mdi:hiking",
+          "friendly_name": "iPhone von Maria Distance"
+        },
+        "last_changed": "2023-06-09T11:02:20.091413+00:00",
+        "last_updated": "2023-06-09T11:02:20.091413+00:00",
+        "context": {
+          "id": "01H2FX4KNVFPHGAB4TGJVH28DA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1717,
+        "native_unit_of_measurement": "m"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_floors_ascended",
+        "state": "2",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-up",
+          "friendly_name": "iPhone von Maria Floors Ascended"
+        },
+        "last_changed": "2023-06-09T11:02:20.091704+00:00",
+        "last_updated": "2023-06-09T11:02:20.091704+00:00",
+        "context": {
+          "id": "01H2FX4KNVZMZXA0F0YK3E7FV7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 2,
+        "native_unit_of_measurement": "floors"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_floors_descended",
+        "state": "3",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-down",
+          "friendly_name": "iPhone von Maria Floors Descended"
+        },
+        "last_changed": "2023-06-09T11:02:20.091871+00:00",
+        "last_updated": "2023-06-09T11:02:20.091871+00:00",
+        "context": {
+          "id": "01H2FX4KNVDP3JPZ2AH3XP31FK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 3,
+        "native_unit_of_measurement": "floors"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_steps",
+        "state": "2552",
+        "attributes": {
+          "unit_of_measurement": "steps",
+          "icon": "mdi:walk",
+          "friendly_name": "iPhone von Maria Steps"
+        },
+        "last_changed": "2023-06-09T11:02:20.092512+00:00",
+        "last_updated": "2023-06-09T11:02:20.092512+00:00",
+        "context": {
+          "id": "01H2FX4KNWMWFTDKN5MX9FEEWS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 2552,
+        "native_unit_of_measurement": "steps"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.iphone_von_maria_average_active_pace",
+        "state": "0",
+        "attributes": {
+          "unit_of_measurement": "m/s",
+          "icon": "mdi:speedometer",
+          "friendly_name": "iPhone von Maria Average Active Pace"
+        },
+        "last_changed": "2023-06-09T11:02:20.092679+00:00",
+        "last_updated": "2023-06-09T11:02:20.092679+00:00",
+        "context": {
+          "id": "01H2FX4KNWFS0WH7SW3ZERG8QN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0,
+        "native_unit_of_measurement": "m/s"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.iphone_von_maria_focus",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:moon-waning-crescent",
+          "friendly_name": "iPhone von Maria Focus"
+        },
+        "last_changed": "2023-06-09T07:40:30.932761+00:00",
+        "last_updated": "2023-06-09T07:40:30.932761+00:00",
+        "context": {
+          "id": "01H2FHK2AMRMXDMY03QTMPAFAX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.iphone_von_maria",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "battery_level": 92,
+          "friendly_name": "iPhone von Maria"
+        },
+        "last_changed": "2023-06-09T07:40:30.935281+00:00",
+        "last_updated": "2023-06-09T07:40:30.935281+00:00",
+        "context": {
+          "id": "01H2FHK2AQC4JFCNY2E8DQ03V2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.oneplus_battery_level",
+        "state": "49",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-40",
+          "friendly_name": "OnePlus Battery Level"
+        },
+        "last_changed": "2023-06-09T07:40:30.939067+00:00",
+        "last_updated": "2023-06-09T07:40:30.939067+00:00",
+        "context": {
+          "id": "01H2FHK2AVCB2WXKENFDP440MC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 49,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.oneplus_battery_state",
+        "state": "not_charging",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "OnePlus Battery State"
+        },
+        "last_changed": "2023-06-09T07:40:30.939388+00:00",
+        "last_updated": "2023-06-09T07:40:30.939388+00:00",
+        "context": {
+          "id": "01H2FHK2AVCKWN2R61757X618X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "not_charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.oneplus_last_reboot",
+        "state": "2023-06-06T13:36:11+00:00",
+        "attributes": {
+          "Local Time": "Tue Jun 06 15:36:11 GMT+02:00 2023",
+          "Time in Milliseconds": 1686058571372,
+          "device_class": "timestamp",
+          "icon": "mdi:restart",
+          "friendly_name": "OnePlus Last Reboot"
+        },
+        "last_changed": "2023-06-09T07:40:30.939586+00:00",
+        "last_updated": "2023-06-09T07:40:30.939586+00:00",
+        "context": {
+          "id": "01H2FHK2AV114CT56E3JFM5W4T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'datetime.datetime'>",
+          "isoformat": "2023-06-06T13:36:11+00:00"
+        },
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.oneplus_next_alarm",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "timestamp",
+          "icon": "mdi:alarm",
+          "friendly_name": "OnePlus Next Alarm"
+        },
+        "last_changed": "2023-06-09T07:40:30.939744+00:00",
+        "last_updated": "2023-06-09T07:40:30.939744+00:00",
+        "context": {
+          "id": "01H2FHK2AV0RBXM4SFSGEKECYC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.oneplus_steps_sensor",
+        "state": "0",
+        "attributes": {
+          "state_class": "total_increasing",
+          "unit_of_measurement": "steps",
+          "icon": "mdi:walk",
+          "friendly_name": "OnePlus Steps Sensor"
+        },
+        "last_changed": "2023-06-09T07:40:30.939925+00:00",
+        "last_updated": "2023-06-09T07:40:30.939925+00:00",
+        "context": {
+          "id": "01H2FHK2AVDRQYY2P64G9G3WVQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "0",
+        "native_unit_of_measurement": "steps"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.oneplus_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "OnePlus Is Charging"
+        },
+        "last_changed": "2023-06-09T07:40:30.942772+00:00",
+        "last_updated": "2023-06-09T07:40:30.942772+00:00",
+        "context": {
+          "id": "01H2FHK2AYM287P5P7RQ9FJ5NW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.oneplus",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 48.2784992,
+          "longitude": 14.3110667,
+          "gps_accuracy": 22,
+          "altitude": 314,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 4,
+          "friendly_name": "OnePlus"
+        },
+        "last_changed": "2023-06-09T07:40:30.944504+00:00",
+        "last_updated": "2023-06-09T07:40:30.944504+00:00",
+        "context": {
+          "id": "01H2FHK2B0DB8KNX8XBDYDNB1B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.hd1903_battery_level",
+        "state": "47",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-40",
+          "friendly_name": "OnePlus Battery Level"
+        },
+        "last_changed": "2023-06-09T11:51:06.191275+00:00",
+        "last_updated": "2023-06-09T11:51:06.191275+00:00",
+        "context": {
+          "id": "01H2FZXX6F15EN317039859H2Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 47,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.hd1903_battery_state",
+        "state": "not_charging",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "HD1903 Battery State"
+        },
+        "last_changed": "2023-06-09T07:40:30.946037+00:00",
+        "last_updated": "2023-06-09T07:40:30.946037+00:00",
+        "context": {
+          "id": "01H2FHK2B2K3NH6GEB710WHVQB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "not_charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.hd1903_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "HD1903 Charger Type"
+        },
+        "last_changed": "2023-06-09T07:40:30.946209+00:00",
+        "last_updated": "2023-06-09T07:40:30.946209+00:00",
+        "context": {
+          "id": "01H2FHK2B2BE8X417RWYFGHVRK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.hd1903_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "OnePlus Is Charging"
+        },
+        "last_changed": "2023-06-09T07:40:30.947556+00:00",
+        "last_updated": "2023-06-09T07:40:30.947556+00:00",
+        "context": {
+          "id": "01H2FHK2B31YWYRRWBDBMX64H8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.hd1903",
+        "state": "not_home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 48.3030606,
+          "longitude": 14.3029175,
+          "gps_accuracy": 27,
+          "altitude": 312,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 1,
+          "friendly_name": "OnePlus"
+        },
+        "last_changed": "2023-06-09T11:52:05.277995+00:00",
+        "last_updated": "2023-06-09T11:52:05.277995+00:00",
+        "context": {
+          "id": "01H2FZZPWX67D7EXEBW29FQP1B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.shelly3em_reboot",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "shelly3em Reboot"
+        },
+        "last_changed": "2023-06-09T07:40:30.957613+00:00",
+        "last_updated": "2023-06-09T07:40:30.957613+00:00",
+        "context": {
+          "id": "01H2FHK2BD6F2KQMTGJKE6HXD1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.turschalter_iaszone",
+        "state": "on",
+        "attributes": {
+          "migrated_to_cache": true,
+          "device_class": "door",
+          "friendly_name": "Türschalter Abstellraum"
+        },
+        "last_changed": "2023-06-09T07:40:41.234858+00:00",
+        "last_updated": "2023-06-09T07:40:41.234858+00:00",
+        "context": {
+          "id": "01H2FHKCCJP5XR0AD193AZ6ZDJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bewegungsmelder_eingang_iaszone",
+        "state": "off",
+        "attributes": {
+          "migrated_to_cache": true,
+          "device_class": "motion",
+          "friendly_name": "Bewegungsmelder Eingang"
+        },
+        "last_changed": "2023-06-09T08:27:47.477706+00:00",
+        "last_updated": "2023-06-09T08:27:47.477706+00:00",
+        "context": {
+          "id": "01H2FM9MCN4A41E7Q5H108B47G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bewegungsmelder_bad_iaszone",
+        "state": "off",
+        "attributes": {
+          "migrated_to_cache": true,
+          "device_class": "motion",
+          "friendly_name": "Bewegungsmelder Bad"
+        },
+        "last_changed": "2023-06-09T08:27:37.471870+00:00",
+        "last_updated": "2023-06-09T08:27:37.471870+00:00",
+        "context": {
+          "id": "01H2FM9AKZJNKABWAAPSMY8Z69",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.schlafzimmer_identify",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "Schlafzimmer Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.236308+00:00",
+        "last_updated": "2023-06-09T07:40:41.236308+00:00",
+        "context": {
+          "id": "01H2FHKCCMTG27SG6F04N1D1S0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.temperatur_bad_identify",
+        "state": "2023-04-26T15:34:41.102191+00:00",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "Temperatur Bad Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.236844+00:00",
+        "last_updated": "2023-06-09T07:40:41.236844+00:00",
+        "context": {
+          "id": "01H2FHKCCM69SGBBB0JWXFFWFJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.zigbee_taster_identify",
+        "state": "2023-04-25T18:03:56.605403+00:00",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "ZigBee Taster Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.237177+00:00",
+        "last_updated": "2023-06-09T07:40:41.237177+00:00",
+        "context": {
+          "id": "01H2FHKCCNTHKWZ6Y4T6STDX6P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.turschalter_identify",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "Türschalter Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.237459+00:00",
+        "last_updated": "2023-06-09T07:40:41.237459+00:00",
+        "context": {
+          "id": "01H2FHKCCNP6YDST6MS3S0S6MB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.bewegungsmelder_eingang_identify",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "Bewegungsmelder Eingang Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.237864+00:00",
+        "last_updated": "2023-06-09T07:40:41.237864+00:00",
+        "context": {
+          "id": "01H2FHKCCN5CM50E7PD63GMV83",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.bewegungsmelder_bad_identify",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "update",
+          "friendly_name": "Bewegungsmelder Bad Identify"
+        },
+        "last_changed": "2023-06-09T07:40:41.238248+00:00",
+        "last_updated": "2023-06-09T07:40:41.238248+00:00",
+        "context": {
+          "id": "01H2FHKCCPT6E3R5H5MTCBRW2P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.schlafzimmer_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.0,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Schlafzimmer Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.238625+00:00",
+        "last_updated": "2023-06-09T07:40:41.238625+00:00",
+        "context": {
+          "id": "01H2FHKCCPPZ7JKVDHDN8CXT5W",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.schlafzimmer_temperature",
+        "state": "23.4",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Schlafzimmer Temperature"
+        },
+        "last_changed": "2023-06-09T11:05:09.986911+00:00",
+        "last_updated": "2023-06-09T11:05:09.986911+00:00",
+        "context": {
+          "id": "01H2FX9SK2HMB7EYAAHJQ0DCQC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ewelink_th01_rssi",
+        "state": "-60",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Schlafzimmer RSSI"
+        },
+        "last_changed": "2023-06-09T11:35:12.424707+00:00",
+        "last_updated": "2023-06-09T11:35:12.424707+00:00",
+        "context": {
+          "id": "01H2FZ0SS8A6ZBPQGPC1JSP9F6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ewelink_th01_lqi",
+        "state": "160",
+        "attributes": {
+          "state_class": "measurement",
+          "friendly_name": "Schlafzimmer LQI"
+        },
+        "last_changed": "2023-06-09T11:35:12.425222+00:00",
+        "last_updated": "2023-06-09T11:35:12.425222+00:00",
+        "context": {
+          "id": "01H2FZ0SS9VWCD7BMMXX2KF4GB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.schlafzimmer_humidity",
+        "state": "64.5",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Schlafzimmer Humidity"
+        },
+        "last_changed": "2023-06-09T11:25:08.175705+00:00",
+        "last_updated": "2023-06-09T11:25:08.175705+00:00",
+        "context": {
+          "id": "01H2FYEBPF8M8GZWFWPXHVCRAS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temperatur_bad_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.0,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Temperatur Bad Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.240764+00:00",
+        "last_updated": "2023-06-09T07:40:41.240764+00:00",
+        "context": {
+          "id": "01H2FHKCCRKFVZWC3S5C9SBZ3N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temperatur_bad_temperature",
+        "state": "25.5",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Temperatur Bad Temperature"
+        },
+        "last_changed": "2023-06-09T10:43:22.261397+00:00",
+        "last_updated": "2023-06-09T10:43:22.261397+00:00",
+        "context": {
+          "id": "01H2FW1WGNWY628QCBNG8FX34T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.temperatur_bad_humidity",
+        "state": "60.6",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Temperatur Bad Humidity"
+        },
+        "last_changed": "2023-06-09T11:31:14.544806+00:00",
+        "last_updated": "2023-06-09T11:31:14.544806+00:00",
+        "context": {
+          "id": "01H2FYSHFG0TMW9P8K8DKZVW40",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.zigbee_taster_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.1,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "ZigBee Taster Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.242199+00:00",
+        "last_updated": "2023-06-09T07:40:41.242199+00:00",
+        "context": {
+          "id": "01H2FHKCCT68473FRM6RK4AM4T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.turschalter_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.1,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Türschalter Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.242850+00:00",
+        "last_updated": "2023-06-09T07:40:41.242850+00:00",
+        "context": {
+          "id": "01H2FHKCCTSM65GP9CQKSC3ESR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ewelink_ds01_lqi",
+        "state": "255",
+        "attributes": {
+          "state_class": "measurement",
+          "friendly_name": "Türschalter LQI"
+        },
+        "last_changed": "2023-06-09T10:16:41.474854+00:00",
+        "last_updated": "2023-06-09T10:16:41.474854+00:00",
+        "context": {
+          "id": "01H2FTH182XZ2J8FQVWG9RK0Y5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bewegungsmelder_eingang_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.0,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Bewegungsmelder Eingang Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.243719+00:00",
+        "last_updated": "2023-06-09T07:40:41.243719+00:00",
+        "context": {
+          "id": "01H2FHKCCV72K8Q7DS8CAGKXE2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bewegungsmelder_bad_battery",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "battery_voltage": 3.0,
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "Bewegungsmelder Bad Battery"
+        },
+        "last_changed": "2023-06-09T07:40:41.244259+00:00",
+        "last_updated": "2023-06-09T07:40:41.244259+00:00",
+        "context": {
+          "id": "01H2FHKCCWXZV92X5ZH6KCMP2P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-06-09T09:00:00.021319+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1674586218845",
+          "icon": "mdi:air-conditioner",
+          "friendly_name": "Wohnraumlüftung Zeitschaltung"
+        },
+        "last_changed": "2023-06-09T07:40:41.258276+00:00",
+        "last_updated": "2023-06-09T09:00:00.076878+00:00",
+        "context": {
+          "id": "01H2FP4KMME72SSMTWHXE78ZGK",
+          "parent_id": "01H2FP4KM2CES89WTZ833FQ4A7",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.bei_besuch_wohnraumluftung_einschalten",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-04-10T19:30:03.741566+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1674586507762",
+          "icon": "mdi:air-conditioner",
+          "friendly_name": "Wohnraumlüftung bei Besuch einschalten"
+        },
+        "last_changed": "2023-06-09T07:40:41.258621+00:00",
+        "last_updated": "2023-06-09T07:40:41.258621+00:00",
+        "context": {
+          "id": "01H2FHKCDAJS3Y6T5T75W5QNS3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.nur_wenn_zuhause_wohnraumluftung_aktiv",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-05-26T16:18:35.503783+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1674984209975",
+          "icon": "mdi:air-conditioner",
+          "friendly_name": "Wenn jemand zuhause Wohnraumlüftung aktiv"
+        },
+        "last_changed": "2023-06-09T07:40:41.258763+00:00",
+        "last_updated": "2023-06-09T07:40:41.258763+00:00",
+        "context": {
+          "id": "01H2FHKCDA0GSJXMGFFWWH87XQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.beim_verlassen_wohnraumluftung_aus",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-03-22T16:04:56.338138+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1675140030294",
+          "icon": "mdi:air-conditioner",
+          "friendly_name": "Beim verlassen Wohnraumlüftung aus"
+        },
+        "last_changed": "2023-06-09T07:40:41.258928+00:00",
+        "last_updated": "2023-06-09T07:40:41.258928+00:00",
+        "context": {
+          "id": "01H2FHKCDAY24WVY9CEY2X99BN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.full_backup_every_sunday",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680958900491",
+          "icon": "mdi:cloud-upload",
+          "friendly_name": "Full Backup every Sunday"
+        },
+        "last_changed": "2023-06-09T07:40:41.259063+00:00",
+        "last_updated": "2023-06-09T07:40:41.259063+00:00",
+        "context": {
+          "id": "01H2FHKCDBCHEK608B4N4PNT54",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.partial_backup_every_wed",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-06-07T00:00:00.425617+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1680958990345",
+          "icon": "mdi:cloud-upload-outline",
+          "friendly_name": "Partial Backup every Wed"
+        },
+        "last_changed": "2023-06-09T07:40:41.259199+00:00",
+        "last_updated": "2023-06-09T07:40:41.259199+00:00",
+        "context": {
+          "id": "01H2FHKCDBD0ZW6N9BM2WJZPF3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.wake_up_light_alarm_with_sunrise_effect",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-05-05T05:29:00.356589+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1682749067039",
+          "icon": "mdi:alarm-check",
+          "friendly_name": "Schlafzimmer Wecklicht"
+        },
+        "last_changed": "2023-06-09T07:40:41.259323+00:00",
+        "last_updated": "2023-06-09T07:40:41.259323+00:00",
+        "context": {
+          "id": "01H2FHKCDBG53XJ7NV76J6GD8Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.taster_schaltet_licht_um",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-06-08T20:49:11.384220+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1682751489702",
+          "icon": "mdi:ceiling-light",
+          "friendly_name": "Taster schaltet Licht um"
+        },
+        "last_changed": "2023-06-09T07:40:41.259589+00:00",
+        "last_updated": "2023-06-09T07:40:41.259589+00:00",
+        "context": {
+          "id": "01H2FHKCDBHGRD2B8JCAASQQAE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.daily_influxdb_backup",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-06-09T01:00:00.077700+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1682942697250",
+          "icon": "mdi:cloud-upload-outline",
+          "friendly_name": "Daily Influxdb Backup"
+        },
+        "last_changed": "2023-06-09T07:40:41.259723+00:00",
+        "last_updated": "2023-06-09T07:40:41.259723+00:00",
+        "context": {
+          "id": "01H2FHKCDBFK0AFFK2KQ7FCANF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.schlafzimmerlicht_lichttemperatur_andern",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-05-08T18:25:39.305018+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1683569134324",
+          "icon": "mdi:weather-sunset-down",
+          "friendly_name": "Schlafzimmerlicht Lichttemperatur ändern"
+        },
+        "last_changed": "2023-06-09T07:40:41.259854+00:00",
+        "last_updated": "2023-06-09T07:40:41.259854+00:00",
+        "context": {
+          "id": "01H2FHKCDB1GA4VAR723DKJ23N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.sonnenaufgang_schlafzimmerlicht",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-05-09T03:32:16.947001+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1683569401168",
+          "icon": "mdi:weather-sunset-up",
+          "friendly_name": "Schlafzimmerlicht Lichttemperatur ändern"
+        },
+        "last_changed": "2023-06-09T07:40:41.259986+00:00",
+        "last_updated": "2023-06-09T07:40:41.259986+00:00",
+        "context": {
+          "id": "01H2FHKCDBJSS07BKT77YT5G2C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.tageslicht",
+        "state": "off",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "single",
+          "current": 0,
+          "id": "1683569602818",
+          "icon": "mdi:calendar-today",
+          "friendly_name": "Tageslicht"
+        },
+        "last_changed": "2023-06-09T07:40:41.260098+00:00",
+        "last_updated": "2023-06-09T07:40:41.260098+00:00",
+        "context": {
+          "id": "01H2FHKCDCFG4QD9PN4AKM5B2B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.nfc_tag_handy_auf_schreibtisch_ist_gescannt",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-05-11T19:49:52.425775+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1683834200388",
+          "friendly_name": "NFC Tag Handy auf Schreibtisch ist gescannt"
+        },
+        "last_changed": "2023-06-09T07:40:41.260208+00:00",
+        "last_updated": "2023-06-09T07:40:41.260208+00:00",
+        "context": {
+          "id": "01H2FHKCDC9PGDQ1BXH0J3N8SG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.nfc_tag_handy_auf_schreibtisch_ist_gescannt_2",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-05-11T19:49:52.427044+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1683834364978",
+          "friendly_name": "NFC Tag Handy auf Schreibtisch ist gescannt"
+        },
+        "last_changed": "2023-06-09T07:40:41.260360+00:00",
+        "last_updated": "2023-06-09T07:40:41.260360+00:00",
+        "context": {
+          "id": "01H2FHKCDC2PXQ0A9NYCWY58TS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.nfc_tag_handy_auf_schreibtisch_ist_gescannt_3",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-05-11T19:49:52.428668+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1683834405583",
+          "friendly_name": "NFC Tag Handy auf Schreibtisch ist gescannt"
+        },
+        "last_changed": "2023-06-09T07:40:41.260635+00:00",
+        "last_updated": "2023-06-09T07:40:41.260635+00:00",
+        "context": {
+          "id": "01H2FHKCDC6EQBB3VTNZTQCKWJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.bewgungsmelder_test",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-06-09T07:37:27.374893+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "1686296134443",
+          "friendly_name": "Bewgungsmelder test"
+        },
+        "last_changed": "2023-06-09T07:40:41.260762+00:00",
+        "last_updated": "2023-06-09T07:40:41.260762+00:00",
+        "context": {
+          "id": "01H2FHKCDCZ21229HGC6G96WET",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T11:55:07.495521+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.lg_webos_tv_e03d_identify",
+        "state": "unavailable",
+        "attributes": {
+          "friendly_name": "LG webOS TV E03D Identify"
+        },
+        "last_changed": "2023-06-08T23:00:20.579402+00:00",
+        "last_updated": "2023-06-08T23:00:20.579402+00:00",
+        "context": {
+          "id": "01H2EKTKF3KJ8RMZ2AEG6J62Z4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T07:39:50.175166+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.schlafzimmer_licht_reboot_2",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Schlafzimmer Licht Reboot"
+        },
+        "last_changed": "2023-06-08T23:12:11.381266+00:00",
+        "last_updated": "2023-06-08T23:12:11.381266+00:00",
+        "context": {
+          "id": "01H2EMG9KNZ96DT5XTS6X4XXM6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-06-09T07:39:50.175166+00:00"
+    }
+  ]
+}

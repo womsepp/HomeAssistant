@@ -1,0 +1,3481 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1674586218845": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "b5a5bdb60267f50278dafdd8414f9fea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-06T21:00:00.029356+00:00",
+            "finish": "2023-06-06T21:00:00.079941+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-06T21:00:00.034619+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-06T09:00:00.061834+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1674586218845",
+                      "icon": "mdi:air-conditioner",
+                      "friendly_name": "Wohnrauml\u00fcftung Zeitschaltung"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.544394+00:00",
+                    "last_updated": "2023-06-06T09:00:00.216592+00:00",
+                    "context": {
+                      "id": "01H27YYENWN6A0JHQMAHTMM9FG",
+                      "parent_id": "01H27YYENC5M3MPVBYCR1YXQSY",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "schedule.wochen_betrieb",
+                    "from_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "on",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-06T23:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-06T11:00:00.005786+00:00",
+                      "last_updated": "2023-06-06T11:00:00.005786+00:00",
+                      "context": {
+                        "id": "01H285T5W5R7705W6CJ80KMEGE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "off",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-07T08:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-06T21:00:00.014369+00:00",
+                      "last_updated": "2023-06-06T21:00:00.014369+00:00",
+                      "context": {
+                        "id": "01H2984T4ECEPW1ZN3EJWP5VP1",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of schedule.wochen_betrieb"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-06T21:00:00.035045+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-06T21:00:00.036237+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0/entity_id/0": [
+              {
+                "path": "condition/0/conditions/0/entity_id/0",
+                "timestamp": "2023-06-06T21:00:00.036334+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-06T21:00:00.045145+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2984T4XEDQS1PAZJ1JW91QR",
+                    "parent_id": "01H2984T4ECEPW1ZN3EJWP5VP1",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1674586218845",
+            "alias": "Wohnrauml\u00fcftung Zeitschaltung",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "schedule.wochen_betrieb"
+                ],
+                "from": "on",
+                "to": "off"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "and",
+                "conditions": [
+                  {
+                    "condition": "state",
+                    "entity_id": "input_boolean.besuch",
+                    "state": "off"
+                  }
+                ],
+                "alias": "When no vistors"
+              }
+            ],
+            "action": [
+              {
+                "type": "turn_off",
+                "device_id": "e0e0bc7b88efaca80ceb9c4f53def525",
+                "entity_id": "switch.shelly_shellyplus2pm_c049ef8d23a8_1",
+                "domain": "switch"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2984T4XEDQS1PAZJ1JW91QR",
+            "parent_id": "01H2984T4ECEPW1ZN3EJWP5VP1",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "b5a5bdb60267f50278dafdd8414f9fea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-06T21:00:00.029356+00:00",
+            "finish": "2023-06-06T21:00:00.079941+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "1f87423c2df1e6cdda9d697d5656f2ef",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T09:00:00.008993+00:00",
+            "finish": "2023-06-07T09:00:00.061478+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-07T09:00:00.009517+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-06T21:00:00.036874+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1674586218845",
+                      "icon": "mdi:air-conditioner",
+                      "friendly_name": "Wohnrauml\u00fcftung Zeitschaltung"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.544394+00:00",
+                    "last_updated": "2023-06-06T21:00:00.077906+00:00",
+                    "context": {
+                      "id": "01H2984T4XEDQS1PAZJ1JW91QR",
+                      "parent_id": "01H2984T4ECEPW1ZN3EJWP5VP1",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "schedule.wochen_betrieb",
+                    "from_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "on",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-07T11:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-07T06:00:00.010590+00:00",
+                      "last_updated": "2023-06-07T06:00:00.010590+00:00",
+                      "context": {
+                        "id": "01H2A71JRAMMA7PJBBCYZRJNRJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "off",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-07T13:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-07T09:00:00.004537+00:00",
+                      "last_updated": "2023-06-07T09:00:00.004537+00:00",
+                      "context": {
+                        "id": "01H2AHB5M4M2YWG7YDP0V4V3K7",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of schedule.wochen_betrieb"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-07T09:00:00.009681+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-07T09:00:00.009727+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0/entity_id/0": [
+              {
+                "path": "condition/0/conditions/0/entity_id/0",
+                "timestamp": "2023-06-07T09:00:00.009799+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-07T09:00:00.017815+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2AHB5M8C63DWJ5S2SPKH6VS",
+                    "parent_id": "01H2AHB5M4M2YWG7YDP0V4V3K7",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1674586218845",
+            "alias": "Wohnrauml\u00fcftung Zeitschaltung",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "schedule.wochen_betrieb"
+                ],
+                "from": "on",
+                "to": "off"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "and",
+                "conditions": [
+                  {
+                    "condition": "state",
+                    "entity_id": "input_boolean.besuch",
+                    "state": "off"
+                  }
+                ],
+                "alias": "When no vistors"
+              }
+            ],
+            "action": [
+              {
+                "type": "turn_off",
+                "device_id": "e0e0bc7b88efaca80ceb9c4f53def525",
+                "entity_id": "switch.shelly_shellyplus2pm_c049ef8d23a8_1",
+                "domain": "switch"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2AHB5M8C63DWJ5S2SPKH6VS",
+            "parent_id": "01H2AHB5M4M2YWG7YDP0V4V3K7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "1f87423c2df1e6cdda9d697d5656f2ef",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T09:00:00.008993+00:00",
+            "finish": "2023-06-07T09:00:00.061478+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "29e8ee8b1571f9e926607d616048a92e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T21:00:00.017732+00:00",
+            "finish": "2023-06-07T21:00:00.047855+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-07T21:00:00.018476+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-07T09:00:00.010704+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1674586218845",
+                      "icon": "mdi:air-conditioner",
+                      "friendly_name": "Wohnrauml\u00fcftung Zeitschaltung"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.544394+00:00",
+                    "last_updated": "2023-06-07T09:00:00.060517+00:00",
+                    "context": {
+                      "id": "01H2AHB5M8C63DWJ5S2SPKH6VS",
+                      "parent_id": "01H2AHB5M4M2YWG7YDP0V4V3K7",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "schedule.wochen_betrieb",
+                    "from_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "on",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-07T23:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-07T11:00:00.004584+00:00",
+                      "last_updated": "2023-06-07T11:00:00.004584+00:00",
+                      "context": {
+                        "id": "01H2AR6WW4H9HCD3K24XMK08G6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "off",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-08T08:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-07T21:00:00.014319+00:00",
+                      "last_updated": "2023-06-07T21:00:00.014319+00:00",
+                      "context": {
+                        "id": "01H2BTHH4EXBAR6GZCJBAE43TD",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of schedule.wochen_betrieb"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-07T21:00:00.018633+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-07T21:00:00.018680+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0/entity_id/0": [
+              {
+                "path": "condition/0/conditions/0/entity_id/0",
+                "timestamp": "2023-06-07T21:00:00.018765+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-07T21:00:00.019876+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2BTHH4H02S3GWGTP9KZ1YHY",
+                    "parent_id": "01H2BTHH4EXBAR6GZCJBAE43TD",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1674586218845",
+            "alias": "Wohnrauml\u00fcftung Zeitschaltung",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "schedule.wochen_betrieb"
+                ],
+                "from": "on",
+                "to": "off"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "and",
+                "conditions": [
+                  {
+                    "condition": "state",
+                    "entity_id": "input_boolean.besuch",
+                    "state": "off"
+                  }
+                ],
+                "alias": "When no vistors"
+              }
+            ],
+            "action": [
+              {
+                "type": "turn_off",
+                "device_id": "e0e0bc7b88efaca80ceb9c4f53def525",
+                "entity_id": "switch.shelly_shellyplus2pm_c049ef8d23a8_1",
+                "domain": "switch"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2BTHH4H02S3GWGTP9KZ1YHY",
+            "parent_id": "01H2BTHH4EXBAR6GZCJBAE43TD",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "29e8ee8b1571f9e926607d616048a92e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T21:00:00.017732+00:00",
+            "finish": "2023-06-07T21:00:00.047855+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "2d739e0716633a0df016f8949b43c83f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T09:00:00.006249+00:00",
+            "finish": "2023-06-08T09:00:00.071053+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T09:00:00.006487+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-07T21:00:00.019089+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1674586218845",
+                      "icon": "mdi:air-conditioner",
+                      "friendly_name": "Wohnrauml\u00fcftung Zeitschaltung"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.602895+00:00",
+                    "last_updated": "2023-06-08T08:09:57.602895+00:00",
+                    "context": {
+                      "id": "01H2D0W8K25JQT96K5D849NW4C",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "schedule.wochen_betrieb",
+                    "from_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "on",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-08T11:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-08T08:09:43.033255+00:00",
+                      "last_updated": "2023-06-08T08:09:43.033255+00:00",
+                      "context": {
+                        "id": "01H2D0VTBS29T6KXGE0EXSKJWK",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "off",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-08T13:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-08T09:00:00.003275+00:00",
+                      "last_updated": "2023-06-08T09:00:00.003275+00:00",
+                      "context": {
+                        "id": "01H2D3QWM39P9J6BSSTWPM8TR1",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of schedule.wochen_betrieb"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-08T09:00:00.006579+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-08T09:00:00.006612+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0/entity_id/0": [
+              {
+                "path": "condition/0/conditions/0/entity_id/0",
+                "timestamp": "2023-06-08T09:00:00.006686+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-08T09:00:00.007675+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2D3QWM6F09YXR6B2CBQADDH",
+                    "parent_id": "01H2D3QWM39P9J6BSSTWPM8TR1",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1674586218845",
+            "alias": "Wohnrauml\u00fcftung Zeitschaltung",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "schedule.wochen_betrieb"
+                ],
+                "from": "on",
+                "to": "off"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "and",
+                "conditions": [
+                  {
+                    "condition": "state",
+                    "entity_id": "input_boolean.besuch",
+                    "state": "off"
+                  }
+                ],
+                "alias": "When no vistors"
+              }
+            ],
+            "action": [
+              {
+                "type": "turn_off",
+                "device_id": "e0e0bc7b88efaca80ceb9c4f53def525",
+                "entity_id": "switch.shelly_shellyplus2pm_c049ef8d23a8_1",
+                "domain": "switch"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2D3QWM6F09YXR6B2CBQADDH",
+            "parent_id": "01H2D3QWM39P9J6BSSTWPM8TR1",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "2d739e0716633a0df016f8949b43c83f",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T09:00:00.006249+00:00",
+            "finish": "2023-06-08T09:00:00.071053+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "2d9cc31d3bf6012e4f554dd39d8ec3e4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T21:00:00.022079+00:00",
+            "finish": "2023-06-08T21:00:00.063401+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T21:00:00.022370+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.wohnraumluftung_abschalten_beim_verlassen_der_wohnung",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-08T09:00:00.007046+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1674586218845",
+                      "icon": "mdi:air-conditioner",
+                      "friendly_name": "Wohnrauml\u00fcftung Zeitschaltung"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.602895+00:00",
+                    "last_updated": "2023-06-08T09:00:00.069799+00:00",
+                    "context": {
+                      "id": "01H2D3QWM6F09YXR6B2CBQADDH",
+                      "parent_id": "01H2D3QWM39P9J6BSSTWPM8TR1",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "schedule.wochen_betrieb",
+                    "from_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "on",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-08T23:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-08T11:00:00.013334+00:00",
+                      "last_updated": "2023-06-08T11:00:00.013334+00:00",
+                      "context": {
+                        "id": "01H2DAKKWDA3GGKV9XQBJTA7KS",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "schedule.wochen_betrieb",
+                      "state": "off",
+                      "attributes": {
+                        "editable": true,
+                        "next_event": "2023-06-09T08:00:00+02:00",
+                        "icon": "mdi:calendar-week",
+                        "friendly_name": "Wohnrauml\u00fcftung aktiv"
+                      },
+                      "last_changed": "2023-06-08T21:00:00.004761+00:00",
+                      "last_updated": "2023-06-08T21:00:00.004761+00:00",
+                      "context": {
+                        "id": "01H2ECY84470NVK9WK0VC7WZ7M",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of schedule.wochen_betrieb"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-08T21:00:00.022475+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-08T21:00:00.022534+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0/entity_id/0": [
+              {
+                "path": "condition/0/conditions/0/entity_id/0",
+                "timestamp": "2023-06-08T21:00:00.022727+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-08T21:00:00.027617+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2ECY84PQYZXY9WEVDQC384K",
+                    "parent_id": "01H2ECY84470NVK9WK0VC7WZ7M",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1674586218845",
+            "alias": "Wohnrauml\u00fcftung Zeitschaltung",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "schedule.wochen_betrieb"
+                ],
+                "from": "on",
+                "to": "off"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "and",
+                "conditions": [
+                  {
+                    "condition": "state",
+                    "entity_id": "input_boolean.besuch",
+                    "state": "off"
+                  }
+                ],
+                "alias": "When no vistors"
+              }
+            ],
+            "action": [
+              {
+                "type": "turn_off",
+                "device_id": "e0e0bc7b88efaca80ceb9c4f53def525",
+                "entity_id": "switch.shelly_shellyplus2pm_c049ef8d23a8_1",
+                "domain": "switch"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2ECY84PQYZXY9WEVDQC384K",
+            "parent_id": "01H2ECY84470NVK9WK0VC7WZ7M",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "2d9cc31d3bf6012e4f554dd39d8ec3e4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T21:00:00.022079+00:00",
+            "finish": "2023-06-08T21:00:00.063401+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1674586218845",
+          "trigger": "state of schedule.wochen_betrieb"
+        }
+      }
+    ],
+    "automation.1682751489702": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "f074e4d8874a87c1af99f3f52191d522",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T20:49:08.430631+00:00",
+            "finish": "2023-06-08T20:49:08.562627+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682751489702",
+          "trigger": "event 'zha_event'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T20:49:08.430909+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.taster_schaltet_licht_um",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-05-12T05:15:03.807469+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682751489702",
+                      "icon": "mdi:ceiling-light",
+                      "friendly_name": "Taster schaltet Licht um"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.603960+00:00",
+                    "last_updated": "2023-06-08T08:09:57.603960+00:00",
+                    "context": {
+                      "id": "01H2D0W8K3N295GGS0KQ2V5H58",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "event": {
+                      "event_type": "zha_event",
+                      "data": {
+                        "device_ieee": "00:12:4b:00:29:28:4a:c9",
+                        "unique_id": "00:12:4b:00:29:28:4a:c9:1:0x0006",
+                        "device_id": "6bcf6f47ede85611bacfa305b14c38ec",
+                        "endpoint_id": 1,
+                        "cluster_id": 6,
+                        "command": "toggle",
+                        "args": [],
+                        "params": {}
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-06-08T20:49:08.425891+00:00",
+                      "context": {
+                        "id": "01H2ECABT938X8HGBG9YX61VR5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'zha_event'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-08T20:49:08.436394+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2ECABTE8SVPB56DRDC30YGQ",
+                    "parent_id": "01H2ECABT938X8HGBG9YX61VR5",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682751489702",
+            "alias": "Taster schaltet Licht um",
+            "description": "",
+            "trigger": [
+              {
+                "device_id": "6bcf6f47ede85611bacfa305b14c38ec",
+                "domain": "zha",
+                "platform": "device",
+                "type": "remote_button_short_press",
+                "subtype": "button"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "type": "toggle",
+                "device_id": "3cb493211074536af96a87670a6d1d7b",
+                "entity_id": "light.schlafzimmer_licht",
+                "domain": "light"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2ECABTE8SVPB56DRDC30YGQ",
+            "parent_id": "01H2ECABT938X8HGBG9YX61VR5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "f074e4d8874a87c1af99f3f52191d522",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T20:49:08.430631+00:00",
+            "finish": "2023-06-08T20:49:08.562627+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682751489702",
+          "trigger": "event 'zha_event'"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "1ea6b778796bf8132e095fa76f83a282",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T20:49:11.383700+00:00",
+            "finish": "2023-06-08T20:49:11.525416+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682751489702",
+          "trigger": "event 'zha_event'",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T20:49:11.383843+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.taster_schaltet_licht_um",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-08T20:49:08.431198+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682751489702",
+                      "icon": "mdi:ceiling-light",
+                      "friendly_name": "Taster schaltet Licht um"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.603960+00:00",
+                    "last_updated": "2023-06-08T20:49:08.562127+00:00",
+                    "context": {
+                      "id": "01H2ECABTE8SVPB56DRDC30YGQ",
+                      "parent_id": "01H2ECABT938X8HGBG9YX61VR5",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "event": {
+                      "event_type": "zha_event",
+                      "data": {
+                        "device_ieee": "00:12:4b:00:29:28:4a:c9",
+                        "unique_id": "00:12:4b:00:29:28:4a:c9:1:0x0006",
+                        "device_id": "6bcf6f47ede85611bacfa305b14c38ec",
+                        "endpoint_id": 1,
+                        "cluster_id": 6,
+                        "command": "toggle",
+                        "args": [],
+                        "params": {}
+                      },
+                      "origin": "LOCAL",
+                      "time_fired": "2023-06-08T20:49:11.380383+00:00",
+                      "context": {
+                        "id": "01H2ECAEPM31PR5Y9ABXHSGVKE",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "description": "event 'zha_event'"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-08T20:49:11.386682+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2ECAEPQDD2YP5KBXJBF54ZK",
+                    "parent_id": "01H2ECAEPM31PR5Y9ABXHSGVKE",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682751489702",
+            "alias": "Taster schaltet Licht um",
+            "description": "",
+            "trigger": [
+              {
+                "device_id": "6bcf6f47ede85611bacfa305b14c38ec",
+                "domain": "zha",
+                "platform": "device",
+                "type": "remote_button_short_press",
+                "subtype": "button"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "type": "toggle",
+                "device_id": "3cb493211074536af96a87670a6d1d7b",
+                "entity_id": "light.schlafzimmer_licht",
+                "domain": "light"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2ECAEPQDD2YP5KBXJBF54ZK",
+            "parent_id": "01H2ECAEPM31PR5Y9ABXHSGVKE",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "1ea6b778796bf8132e095fa76f83a282",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T20:49:11.383700+00:00",
+            "finish": "2023-06-08T20:49:11.525416+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682751489702",
+          "trigger": "event 'zha_event'"
+        }
+      }
+    ],
+    "automation.1680958990345": [
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "7fde6e24a0b8d13492d40c92cb1e64cf",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-05T00:00:00.426020+00:00",
+            "finish": "2023-06-05T00:00:00.426204+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-05T00:00:00.426090+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.partial_backup_every_wed",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-05-31T00:00:00.306745+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958990345",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Partial Backup every Wed"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545585+00:00",
+                    "last_updated": "2023-06-01T19:33:19.545585+00:00",
+                    "context": {
+                      "id": "01H1W76GHSA8S6TH1C3041Y189",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-05T02:00:00.425695+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-05T00:00:00.426131+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.426158"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "wed"
+                  ],
+                  "now_weekday": "mon",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958990345",
+            "alias": "Partial Backup every Wed",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "after": "02:00:00",
+                "before": "03:00:00",
+                "weekday": [
+                  "wed"
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "Configurator",
+                    "influxdb"
+                  ],
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H24DMZD9YC38TF7HJSKVV2RA",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "7fde6e24a0b8d13492d40c92cb1e64cf",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-05T00:00:00.426020+00:00",
+            "finish": "2023-06-05T00:00:00.426204+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "1d8df247f0296824accab325911194e2",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-06T00:00:00.425029+00:00",
+            "finish": "2023-06-06T00:00:00.425213+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-06T00:00:00.425077+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.partial_backup_every_wed",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-05-31T00:00:00.306745+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958990345",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Partial Backup every Wed"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545585+00:00",
+                    "last_updated": "2023-06-01T19:33:19.545585+00:00",
+                    "context": {
+                      "id": "01H1W76GHSA8S6TH1C3041Y189",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-06T02:00:00.424652+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-06T00:00:00.425114+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.425137"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "wed"
+                  ],
+                  "now_weekday": "tue",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958990345",
+            "alias": "Partial Backup every Wed",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "after": "02:00:00",
+                "before": "03:00:00",
+                "weekday": [
+                  "wed"
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "Configurator",
+                    "influxdb"
+                  ],
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2701PD8X42WB1819GKRCPD7",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "1d8df247f0296824accab325911194e2",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-06T00:00:00.425029+00:00",
+            "finish": "2023-06-06T00:00:00.425213+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "721c15f469d51db8e62e2b397521044d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T00:00:00.425220+00:00",
+            "finish": "2023-06-07T00:00:10.445779+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-07T00:00:00.425290+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.partial_backup_every_wed",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-05-31T00:00:00.306745+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958990345",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Partial Backup every Wed"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545585+00:00",
+                    "last_updated": "2023-06-01T19:33:19.545585+00:00",
+                    "context": {
+                      "id": "01H1W76GHSA8S6TH1C3041Y189",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-07T02:00:00.424926+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-07T00:00:00.425327+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.425351"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "wed"
+                  ],
+                  "now_weekday": "wed",
+                  "result": true
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-07T00:00:00.442043+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H29JEDD9TWRH69SMH2ATYA2B",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "auto_backup",
+                    "service": "backup_partial",
+                    "service_data": {
+                      "addons": [
+                        "grafana",
+                        "Configurator",
+                        "influxdb"
+                      ],
+                      "keep_days": 14
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958990345",
+            "alias": "Partial Backup every Wed",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "after": "02:00:00",
+                "before": "03:00:00",
+                "weekday": [
+                  "wed"
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "Configurator",
+                    "influxdb"
+                  ],
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H29JEDD9TWRH69SMH2ATYA2B",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "721c15f469d51db8e62e2b397521044d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-07T00:00:00.425220+00:00",
+            "finish": "2023-06-07T00:00:10.445779+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "1db20649aa5a161866147a9e3cb6700f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-08T00:00:00.425019+00:00",
+            "finish": "2023-06-08T00:00:00.425259+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T00:00:00.425162+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.partial_backup_every_wed",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-07T00:00:00.425617+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958990345",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Partial Backup every Wed"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545585+00:00",
+                    "last_updated": "2023-06-07T00:00:10.444063+00:00",
+                    "context": {
+                      "id": "01H29JEQ6CV7MPA8SZYGKTJQK6",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-08T02:00:00.424646+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-08T00:00:00.425201+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.425224"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "wed"
+                  ],
+                  "now_weekday": "thu",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958990345",
+            "alias": "Partial Backup every Wed",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "after": "02:00:00",
+                "before": "03:00:00",
+                "weekday": [
+                  "wed"
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "Configurator",
+                    "influxdb"
+                  ],
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2C4V4D8RHAFV4H52NFX05BV",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "1db20649aa5a161866147a9e3cb6700f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-08T00:00:00.425019+00:00",
+            "finish": "2023-06-08T00:00:00.425259+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "4a44c3b52636ddefca2cacbe8556c40f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-09T00:00:00.336396+00:00",
+            "finish": "2023-06-09T00:00:00.337984+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-09T00:00:00.337620+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.partial_backup_every_wed",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-07T00:00:00.425617+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958990345",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Partial Backup every Wed"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.603710+00:00",
+                    "last_updated": "2023-06-08T08:09:57.603710+00:00",
+                    "context": {
+                      "id": "01H2D0W8K3X26DAVW778G0P2WH",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-09T02:00:00.334704+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-09T00:00:00.337802+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.337880"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "wed"
+                  ],
+                  "now_weekday": "fri",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958990345",
+            "alias": "Partial Backup every Wed",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "after": "02:00:00",
+                "before": "03:00:00",
+                "weekday": [
+                  "wed"
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "Configurator",
+                    "influxdb"
+                  ],
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2EQ7VAG6XE4ZKXAYY492HKF",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "4a44c3b52636ddefca2cacbe8556c40f",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-09T00:00:00.336396+00:00",
+            "finish": "2023-06-09T00:00:00.337984+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958990345",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.1680958900491": [
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "4e9be9ada5253a660d47f5a249a94983",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-05T00:00:00.293264+00:00",
+            "finish": "2023-06-05T00:00:00.293692+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-05T00:00:00.293486+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.full_backup_every_sunday",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958900491",
+                      "icon": "mdi:cloud-upload",
+                      "friendly_name": "Full Backup every Sunday"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545239+00:00",
+                    "last_updated": "2023-06-04T00:00:10.298687+00:00",
+                    "context": {
+                      "id": "01H21V8J1TDNWJ01EP15757HM0",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-05T02:00:00.292661+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-05T00:00:00.293599+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.293633"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "sun"
+                  ],
+                  "now_weekday": "mon",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958900491",
+            "alias": "Full Backup every Sunday",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "weekday": [
+                  "sun"
+                ],
+                "after": "02:00:00",
+                "before": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_full",
+                "data": {
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H24DMZ940TPRGV5ZNAMJJ26T",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "4e9be9ada5253a660d47f5a249a94983",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-05T00:00:00.293264+00:00",
+            "finish": "2023-06-05T00:00:00.293692+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "e3e06f98dec4491932ea58b9a02b6c1b",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-06T00:00:00.292413+00:00",
+            "finish": "2023-06-06T00:00:00.292914+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-06T00:00:00.292510+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.full_backup_every_sunday",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958900491",
+                      "icon": "mdi:cloud-upload",
+                      "friendly_name": "Full Backup every Sunday"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545239+00:00",
+                    "last_updated": "2023-06-04T00:00:10.298687+00:00",
+                    "context": {
+                      "id": "01H21V8J1TDNWJ01EP15757HM0",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-06T02:00:00.292101+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-06T00:00:00.292729+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.292864"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "sun"
+                  ],
+                  "now_weekday": "tue",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958900491",
+            "alias": "Full Backup every Sunday",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "weekday": [
+                  "sun"
+                ],
+                "after": "02:00:00",
+                "before": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_full",
+                "data": {
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2701P94TKRGWEMYXTKN4066",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "e3e06f98dec4491932ea58b9a02b6c1b",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-06T00:00:00.292413+00:00",
+            "finish": "2023-06-06T00:00:00.292914+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "fa234b931cd0af2a691c200d30d3cf73",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-07T00:00:00.294677+00:00",
+            "finish": "2023-06-07T00:00:00.295100+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-07T00:00:00.294865+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.full_backup_every_sunday",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958900491",
+                      "icon": "mdi:cloud-upload",
+                      "friendly_name": "Full Backup every Sunday"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545239+00:00",
+                    "last_updated": "2023-06-04T00:00:10.298687+00:00",
+                    "context": {
+                      "id": "01H21V8J1TDNWJ01EP15757HM0",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-07T02:00:00.294319+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-07T00:00:00.294971+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.295009"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "sun"
+                  ],
+                  "now_weekday": "wed",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958900491",
+            "alias": "Full Backup every Sunday",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "weekday": [
+                  "sun"
+                ],
+                "after": "02:00:00",
+                "before": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_full",
+                "data": {
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H29JED96M1KBHNH8WAGR3Z37",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "fa234b931cd0af2a691c200d30d3cf73",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-07T00:00:00.294677+00:00",
+            "finish": "2023-06-07T00:00:00.295100+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "ac9ab608603eed2d0aceb05aad699dcc",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-08T00:00:00.293067+00:00",
+            "finish": "2023-06-08T00:00:00.294036+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T00:00:00.293519+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.full_backup_every_sunday",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958900491",
+                      "icon": "mdi:cloud-upload",
+                      "friendly_name": "Full Backup every Sunday"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.545239+00:00",
+                    "last_updated": "2023-06-04T00:00:10.298687+00:00",
+                    "context": {
+                      "id": "01H21V8J1TDNWJ01EP15757HM0",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-08T02:00:00.292467+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-08T00:00:00.293680+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.293740"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "sun"
+                  ],
+                  "now_weekday": "thu",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958900491",
+            "alias": "Full Backup every Sunday",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "weekday": [
+                  "sun"
+                ],
+                "after": "02:00:00",
+                "before": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_full",
+                "data": {
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2C4V494PPT3D4MS7V9YE4XW",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "ac9ab608603eed2d0aceb05aad699dcc",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-08T00:00:00.293067+00:00",
+            "finish": "2023-06-08T00:00:00.294036+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "a77d1af0e5509db3a718d2ddd7b05516",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-09T00:00:00.494610+00:00",
+            "finish": "2023-06-09T00:00:00.494825+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-09T00:00:00.494676+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.full_backup_every_sunday",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-04T00:00:00.293443+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1680958900491",
+                      "icon": "mdi:cloud-upload",
+                      "friendly_name": "Full Backup every Sunday"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.603568+00:00",
+                    "last_updated": "2023-06-08T08:09:57.603568+00:00",
+                    "context": {
+                      "id": "01H2D0W8K3ZPJV1VCMAAB6ZY05",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-09T02:00:00.493994+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-09T00:00:00.494736+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "02:00:00.494770"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00"
+                  },
+                  "weekday": [
+                    "sun"
+                  ],
+                  "now_weekday": "fri",
+                  "result": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1680958900491",
+            "alias": "Full Backup every Sunday",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "02:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "time",
+                "weekday": [
+                  "sun"
+                ],
+                "after": "02:00:00",
+                "before": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_full",
+                "data": {
+                  "keep_days": 14
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2EQ7VFEV16E80VQV5X7HYK2",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "a77d1af0e5509db3a718d2ddd7b05516",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-09T00:00:00.494610+00:00",
+            "finish": "2023-06-09T00:00:00.494825+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1680958900491",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.1682942697250": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e700cb894464841040da9a1b912c029e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-05T01:00:00.484861+00:00",
+            "finish": "2023-06-05T01:00:11.117606+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-05T01:00:00.485086+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.daily_influxdb_backup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-03T01:00:00.488476+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682942697250",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Daily Influxdb Backup"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.548419+00:00",
+                    "last_updated": "2023-06-03T01:00:10.493954+00:00",
+                    "context": {
+                      "id": "01H1ZC9PVXMDS8EP260640JC3Q",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-05T03:00:00.484264+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-05T01:00:00.485223+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-05T01:00:00.485270+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "00:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00.485292"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "23:59:59.999999"
+                  },
+                  "weekday": [
+                    "sun",
+                    "wed"
+                  ],
+                  "now_weekday": "mon",
+                  "result": false
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-05T01:00:00.489785+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H24H2V34EPFJ2Y9B14N5WEB1",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "auto_backup",
+                    "service": "backup_partial",
+                    "service_data": {
+                      "addons": [
+                        "grafana",
+                        "influxdb",
+                        "core_mariadb"
+                      ],
+                      "keep_days": 4
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682942697250",
+            "alias": "Daily Influxdb Backup",
+            "description": "backup influx and grafana",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "not",
+                "conditions": [
+                  {
+                    "condition": "time",
+                    "weekday": [
+                      "sun",
+                      "wed"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "influxdb",
+                    "core_mariadb"
+                  ],
+                  "keep_days": 4
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H24H2V34EPFJ2Y9B14N5WEB1",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e700cb894464841040da9a1b912c029e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-05T01:00:00.484861+00:00",
+            "finish": "2023-06-05T01:00:11.117606+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4cdd4c3aeaf084ca00e52857871b6d11",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-06T01:00:00.503420+00:00",
+            "finish": "2023-06-06T01:00:10.513826+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-06T01:00:00.503846+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.daily_influxdb_backup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-05T01:00:00.485753+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682942697250",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Daily Influxdb Backup"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.548419+00:00",
+                    "last_updated": "2023-06-05T01:00:11.103145+00:00",
+                    "context": {
+                      "id": "01H24H35EZ021VN1HMG3M426MA",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-06T03:00:00.497111+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-06T01:00:00.504007+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-06T01:00:00.504065+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "00:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00.504092"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "23:59:59.999999"
+                  },
+                  "weekday": [
+                    "sun",
+                    "wed"
+                  ],
+                  "now_weekday": "tue",
+                  "result": false
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-06T01:00:00.509104+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H273FJ3H2HHFPTHWP7FAR2H1",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "auto_backup",
+                    "service": "backup_partial",
+                    "service_data": {
+                      "addons": [
+                        "grafana",
+                        "influxdb",
+                        "core_mariadb"
+                      ],
+                      "keep_days": 4
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682942697250",
+            "alias": "Daily Influxdb Backup",
+            "description": "backup influx and grafana",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "not",
+                "conditions": [
+                  {
+                    "condition": "time",
+                    "weekday": [
+                      "sun",
+                      "wed"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "influxdb",
+                    "core_mariadb"
+                  ],
+                  "keep_days": 4
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H273FJ3H2HHFPTHWP7FAR2H1",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4cdd4c3aeaf084ca00e52857871b6d11",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-06T01:00:00.503420+00:00",
+            "finish": "2023-06-06T01:00:10.513826+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0/conditions/0",
+          "run_id": "96400678f35ac52b229bae3cb62bc6b3",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-07T01:00:00.484148+00:00",
+            "finish": "2023-06-07T01:00:00.484885+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-07T01:00:00.484634+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.daily_influxdb_backup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-06T01:00:00.504683+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682942697250",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Daily Influxdb Backup"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.548419+00:00",
+                    "last_updated": "2023-06-06T01:00:10.511968+00:00",
+                    "context": {
+                      "id": "01H273FVWF1YE80JYXR8VBS6AP",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-07T03:00:00.483538+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-07T01:00:00.484746+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-07T01:00:00.484794+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "00:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00.484815"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "23:59:59.999999"
+                  },
+                  "weekday": [
+                    "sun",
+                    "wed"
+                  ],
+                  "now_weekday": "wed",
+                  "result": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682942697250",
+            "alias": "Daily Influxdb Backup",
+            "description": "backup influx and grafana",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "not",
+                "conditions": [
+                  {
+                    "condition": "time",
+                    "weekday": [
+                      "sun",
+                      "wed"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "influxdb",
+                    "core_mariadb"
+                  ],
+                  "keep_days": 4
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H29NW933AT82YVV3HNG56V82",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0/conditions/0",
+          "run_id": "96400678f35ac52b229bae3cb62bc6b3",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2023-06-07T01:00:00.484148+00:00",
+            "finish": "2023-06-07T01:00:00.484885+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "bf8f31efb740db7671f5b62702cca304",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T01:00:00.483306+00:00",
+            "finish": "2023-06-08T01:00:10.495758+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-08T01:00:00.483665+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.daily_influxdb_backup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-06T01:00:00.504683+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682942697250",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Daily Influxdb Backup"
+                    },
+                    "last_changed": "2023-06-01T19:33:19.548419+00:00",
+                    "last_updated": "2023-06-06T01:00:10.511968+00:00",
+                    "context": {
+                      "id": "01H273FVWF1YE80JYXR8VBS6AP",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-08T03:00:00.482869+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-08T01:00:00.483753+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-08T01:00:00.483803+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "00:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00.483826"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "23:59:59.999999"
+                  },
+                  "weekday": [
+                    "sun",
+                    "wed"
+                  ],
+                  "now_weekday": "thu",
+                  "result": false
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-08T01:00:00.488010+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2C89033NMT14K946Q0H0H1C",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "auto_backup",
+                    "service": "backup_partial",
+                    "service_data": {
+                      "addons": [
+                        "grafana",
+                        "influxdb",
+                        "core_mariadb"
+                      ],
+                      "keep_days": 4
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682942697250",
+            "alias": "Daily Influxdb Backup",
+            "description": "backup influx and grafana",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "not",
+                "conditions": [
+                  {
+                    "condition": "time",
+                    "weekday": [
+                      "sun",
+                      "wed"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "influxdb",
+                    "core_mariadb"
+                  ],
+                  "keep_days": 4
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2C89033NMT14K946Q0H0H1C",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "bf8f31efb740db7671f5b62702cca304",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-08T01:00:00.483306+00:00",
+            "finish": "2023-06-08T01:00:10.495758+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4cb3ac2d073af5de2ef2911550ab503e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-09T01:00:00.077015+00:00",
+            "finish": "2023-06-09T01:00:10.441459+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-06-09T01:00:00.077181+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.daily_influxdb_backup",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-06-08T01:00:00.484172+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1682942697250",
+                      "icon": "mdi:cloud-upload-outline",
+                      "friendly_name": "Daily Influxdb Backup"
+                    },
+                    "last_changed": "2023-06-08T08:09:57.604095+00:00",
+                    "last_updated": "2023-06-08T08:09:57.604095+00:00",
+                    "context": {
+                      "id": "01H2D0W8K48K82CX6NQTFDJSVA",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-06-09T03:00:00.076624+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2023-06-09T01:00:00.077355+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "condition/0/conditions/0": [
+              {
+                "path": "condition/0/conditions/0",
+                "timestamp": "2023-06-09T01:00:00.077386+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "00:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "03:00:00.077420"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "23:59:59.999999"
+                  },
+                  "weekday": [
+                    "sun",
+                    "wed"
+                  ],
+                  "now_weekday": "fri",
+                  "result": false
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-09T01:00:00.081481+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2ETNPPCY98J67TYYNS4PJJ5",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "auto_backup",
+                    "service": "backup_partial",
+                    "service_data": {
+                      "addons": [
+                        "grafana",
+                        "influxdb",
+                        "core_mariadb"
+                      ],
+                      "keep_days": 4
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1682942697250",
+            "alias": "Daily Influxdb Backup",
+            "description": "backup influx and grafana",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "condition": [
+              {
+                "condition": "not",
+                "conditions": [
+                  {
+                    "condition": "time",
+                    "weekday": [
+                      "sun",
+                      "wed"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "action": [
+              {
+                "service": "auto_backup.backup_partial",
+                "data": {
+                  "addons": [
+                    "grafana",
+                    "influxdb",
+                    "core_mariadb"
+                  ],
+                  "keep_days": 4
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2ETNPPCY98J67TYYNS4PJJ5",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4cb3ac2d073af5de2ef2911550ab503e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-09T01:00:00.077015+00:00",
+            "finish": "2023-06-09T01:00:10.441459+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1682942697250",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.1686296134443": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "b11816002ad711952ab105f6c209096e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-09T07:37:27.374598+00:00",
+            "finish": "2023-06-09T07:37:27.500313+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1686296134443",
+          "trigger": null,
+          "trace": {
+            "trigger": [
+              {
+                "path": "trigger",
+                "timestamp": "2023-06-09T07:37:27.374665+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bewgungsmelder_test",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1686296134443",
+                      "friendly_name": "Bewgungsmelder test"
+                    },
+                    "last_changed": "2023-06-09T07:37:08.334433+00:00",
+                    "last_updated": "2023-06-09T07:37:08.334433+00:00",
+                    "context": {
+                      "id": "01H2FHCWFEFC8F283P8CRWWNDJ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "platform": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-06-09T07:37:27.376948+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H2FHDF2ED3NGVXKRF0W5WEES",
+                    "parent_id": "01H2FHDF2C4SB3P5KH85X827FE",
+                    "user_id": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1686296134443",
+            "alias": "Bewgungsmelder test",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "binary_sensor.bewegungsmelder_eingang_iaszone"
+                ],
+                "from": "off",
+                "to": "on"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "type": "toggle",
+                "device_id": "702d93311c653d4643dd0cfa410265f6",
+                "entity_id": "light.wohnzimmerlicht_switch_0",
+                "domain": "light"
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H2FHDF2ED3NGVXKRF0W5WEES",
+            "parent_id": "01H2FHDF2C4SB3P5KH85X827FE",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "b11816002ad711952ab105f6c209096e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-06-09T07:37:27.374598+00:00",
+            "finish": "2023-06-09T07:37:27.500313+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1686296134443",
+          "trigger": null
+        }
+      }
+    ]
+  }
+}

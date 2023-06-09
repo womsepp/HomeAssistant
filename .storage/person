@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "Dominik",
+        "user_id": "d9d673acf530496eb784356d2ca6e60a",
+        "device_trackers": [
+          "device_tracker.oneplus"
+        ],
+        "id": "dominik",
+        "picture": "/api/image/serve/b3be59effb5508a698157fdb3597ab4b/512x512"
+      },
+      {
+        "name": "Maria",
+        "device_trackers": [
+          "device_tracker.iphone_von_maria"
+        ],
+        "user_id": "84d72e86f992414aaf8bfbfadbe32466",
+        "picture": "/api/image/serve/3dd2d0af92e23f2848bb3d5b6b36a36b/512x512",
+        "id": "maria"
+      },
+      {
+        "name": "NodeRED",
+        "device_trackers": [],
+        "user_id": null,
+        "picture": null,
+        "id": "nodered"
+      }
+    ]
+  }
+}

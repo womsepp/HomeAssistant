@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "Wohnküche",
+        "id": "kuche",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Schlafzimmer",
+        "id": "schlafzimmer",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Wohnung",
+        "id": "wohnung",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "HomeAssistant",
+        "id": "homeassistant",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Bad",
+        "id": "bad",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Eingangsbereich",
+        "id": "eingangsbereich",
+        "picture": null
+      }
+    ]
+  }
+}

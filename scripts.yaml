@@ -1,0 +1,31 @@
+'1677440498028':
+  alias: Confirmable Notification
+  use_blueprint:
+    path: homeassistant/confirmable_notification.yaml
+    input:
+      notify_device: d0fb7ace26ab22ac6b860561be14134a
+      title: Test
+      message: Wow this is a test
+start_spotify_abrissparty:
+  alias: Start Spotify - Abrissparty
+  sequence:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.lautsprecher
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 15
+      milliseconds: 0
+  - service: spotcast.start
+    data:
+      force_playback: false
+      random_song: true
+      repeat: 'off'
+      shuffle: true
+      offset: 0
+      ignore_fully_played: false
+      entity_id: media_player.kuche
+  mode: single
+  icon: mdi:file-music

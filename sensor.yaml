@@ -1,0 +1,99 @@
+# all sensors
+- platform: time_date
+  display_options:
+    - "time"
+    - "date"
+    - "date_time"
+    - "date_time_utc"
+    - "date_time_iso"
+    - "time_date"
+    - "time_utc"
+    - "beat"
+
+#- platform: integration
+- platform: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: disk_use
+      arg: /
+    - type: disk_free
+      arg: /
+    - type: load_1m
+    - type: load_5m
+    - type: load_15m
+    - type: memory_use_percent
+    - type: memory_free
+    - type: network_in
+      arg: enp2s1
+    - type: network_out
+      arg: enp2s1
+    - type: throughput_network_in
+      arg: enp2s1
+    - type: throughput_network_out
+      arg: enp2s1
+    - type: packets_in
+      arg: enp2s1
+    - type: packets_out
+      arg: enp2s1
+    - type: ipv4_address
+      arg: enp2s1
+    - type: swap_use
+    - type: processor_use
+    - type: last_boot
+
+# template sensors
+
+# shows at which step the air condition is currently running
+- platform: template
+  sensors:
+    
+    # Template sensor for values of power import (active_power > 0)
+    power_import:
+      friendly_name: "Power Import"
+      unit_of_measurement: "W"
+      value_template: >-
+        {% if (states('sensor.shelly3em_channel_a_power')|float + states('sensor.shelly3em_channel_b_power')|float + states('sensor.shelly3em_channel_c_power')|float) > 0 %}
+          {{ states('sensor.shelly3em_channel_a_power')|float + states('sensor.shelly3em_channel_b_power')|float + states('sensor.shelly3em_channel_c_power')|float }}
+        {% else %}
+          {{ 0 }}
+        {% endif %}
+      availability_template: "{{
+        [ states('sensor.shelly3em_channel_a_power'),
+        states('sensor.shelly3em_channel_b_power'),
+        states('sensor.shelly3em_channel_c_power')
+        ] | map('is_number') | min
+        }}"
+
+      # # Template sensor for values of power export (active_power < 0)
+      # - power_export:
+      #   friendly_name: "Power Export"
+      #   unit_of_measurement: 'W'
+      #   value_template: >-
+      #     {% if (states('sensor.shelly3em_channel_a_power')|float + states('sensor.shelly3em_channel_b_power')|float + states('sensor.shelly3em_channel_c_power')|float) < 0 %}
+      #       {{ (states('sensor.shelly3em_channel_a_power')|float + states('sensor.shelly3em_channel_b_power')|float + states('sensor.shelly3em_channel_c_power')|float) * -1 }}
+      #     {% else %}
+      #       {{ 0 }}
+      #     {% endif %}
+      #   availability_template: "{{
+      #       [ states('sensor.shelly3em_channel_a_power'),
+      #         states('sensor.shelly3em_channel_b_power'),
+      #         states('sensor.shelly3em_channel_c_power')
+      #       ] | map('is_number') | min
+      #     }}"
+
+# Sensor for Riemann sum of energy import (W -> Wh)
+- platform: integration
+  source: sensor.power_import
+  name: energy_import_sum
+  unit_prefix: k
+  round: 2
+  method: left
+
+# # Sensor for Riemann sum of energy consumption (W -> Wh)
+# - platform: integration
+#   source: sensor.power_consumption
+#   name: energy_consumption_sum
+#   unit_prefix: k
+#   round: 2
+#   method: left

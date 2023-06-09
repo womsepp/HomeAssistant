@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "tag",
+  "data": {
+    "items": [
+      {
+        "id": "2933de20-0352-4ec3-9a22-52a2730f0697",
+        "tag_id": "2933de20-0352-4ec3-9a22-52a2730f0697",
+        "name": "Handy auf Schreibtisch",
+        "last_scanned": "2023-05-11T19:49:52.420516+00:00"
+      },
+      {
+        "id": "d748ed20-bd5c-420e-8bd9-531ae8ca48b8",
+        "tag_id": "d748ed20-bd5c-420e-8bd9-531ae8ca48b8",
+        "name": "test"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110",
+        "type": "module",
+        "id": "cc340656144b43d3a15430c40c4b87ef"
+      },
+      {
+        "url": "/hacsfiles/lovelace-mushroom/mushroom.js?hacstag=444350375271",
+        "type": "module",
+        "id": "cd19443453224b35b2c2f08a94d9fef1"
+      },
+      {
+        "url": "/hacsfiles/lovelace-plotly-graph-card/plotly-graph-card.js?hacstag=413812496333",
+        "type": "module",
+        "id": "c5c2912d46484d1497a0838ba274b61e"
+      },
+      {
+        "url": "/hacsfiles/swipe-card/swipe-card.js?hacstag=192732887500",
+        "type": "module",
+        "id": "0274b5ea32854b89a8fd47bac5d76753"
+      },
+      {
+        "url": "/hacsfiles/power-flow-card-plus/power-flow-card-plus.js?hacstag=61808181501",
+        "type": "module",
+        "id": "03b68f4108064de9b9579950691dd00d"
+      },
+      {
+        "url": "/hacsfiles/lovelace-auto-entities/auto-entities.js?hacstag=1677445841121",
+        "type": "module",
+        "id": "5b79d6217a3f45cbbe8872f82132e2e7"
+      },
+      {
+        "url": "/hacsfiles/button-card/button-card.js?hacstag=146194325350",
+        "type": "module",
+        "id": "a8590048544648c2a13417a8a8723290"
+      },
+      {
+        "url": "/hacsfiles/lovelace-card-mod/card-mod.js?hacstag=190927524322",
+        "type": "module",
+        "id": "d8e6894fe3374d7b938147af740a9f34"
+      },
+      {
+        "url": "/hacsfiles/mini-media-player/mini-media-player-bundle.js?hacstag=1485208381165",
+        "type": "module",
+        "id": "ae4ab093c96c40a0bb6ae328673afeea"
+      },
+      {
+        "url": "/hacsfiles/light-entity-card/light-entity-card.js?hacstag=168744428606",
+        "type": "module",
+        "id": "b549bc0f6a2840239b3eae45d328e79f"
+      },
+      {
+        "url": "/hacsfiles/lovelace-hourly-weather/hourly-weather.js?hacstag=4992702024110",
+        "type": "module",
+        "id": "5f08cbea620c442c85e857e0282e6b4b"
+      },
+      {
+        "url": "/hacsfiles/simple-weather-card/simple-weather-card-bundle.js?hacstag=172998062083",
+        "type": "module",
+        "id": "afd01218f75c494ea0f4acc2a45ac814"
+      },
+      {
+        "url": "/hacsfiles/lovelace-entities-btn-group/entities-btn-group.js?hacstag=373857882104",
+        "type": "module",
+        "id": "4414211a9f5e4167ab71a60c53d314f5"
+      },
+      {
+        "url": "/hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js?hacstag=142051833044",
+        "type": "module",
+        "id": "7b195aa453114303a24a556f912d6236"
+      },
+      {
+        "id": "12d8e2488140416bba49679eff78f486",
+        "url": "/hacsfiles/lovelace-windrose-card/windrose-card.js?hacstag=5912706960110",
+        "type": "module"
+      },
+      {
+        "id": "7866322c83b14f4886eb0b2ef89ad802",
+        "url": "/hacsfiles/lovelace-windrose-card/windrose-card.js",
+        "type": "module"
+      }
+    ]
+  }
+}

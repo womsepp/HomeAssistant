@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_number",
+  "data": {
+    "items": [
+      {
+        "id": "strompreis",
+        "min": 0.0,
+        "max": 1.0,
+        "name": "Strompreis",
+        "icon": "mdi:currency-usd",
+        "mode": "box",
+        "step": 0.01,
+        "unit_of_measurement": "EUR /kWh"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# Alarm
+
+- platform: manual
+  name: Zuhause
+  code: 1234
+  arming_time: 30 # Zeit bis SCHARF geschaltet
+  delay_time: 1 # Zeit von ERKENNEN bis AUSGELÖST
+  trigger_time: 60 # Zeit wie lange ALARM Zustand andauert
+  disarmed:
+    trigger_time: 0 # Zeit bis UNSCHARF geschaltet
+  armed_home: # Alarmfunktion für Nacht
+    arming_time: 0
+    delay_time: 0

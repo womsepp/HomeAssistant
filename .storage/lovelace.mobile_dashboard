@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.mobile_dashboard",
+  "data": {
+    "config": {
+      "title": "Linz Wohnung",
+      "views": [
+        {
+          "theme": "minimalist-mobile",
+          "path": "default_view",
+          "title": "Home",
+          "icon": "mdi:home",
+          "badges": [],
+          "cards": [
+            {
+              "type": "custom:hourly-weather",
+              "entity": "weather.openweathermap",
+              "name": "Wetter",
+              "num_segments": "14",
+              "icons": false,
+              "show_wind": "speed",
+              "show_precipitation_amounts": true,
+              "show_precipitation_probability": true
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.dominik"
+                    },
+                    {
+                      "type": "custom:mushroom-entity-card",
+                      "entity": "sensor.oneplus_battery_level",
+                      "name": "One PLus"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.maria"
+                    },
+                    {
+                      "type": "custom:mushroom-entity-card",
+                      "entity": "sensor.iphone_von_maria_battery_level",
+                      "name": "IPhone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Schlafzimmer",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/schlafzimmer"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "custom:mushroom-light-card",
+                  "use_light_color": true,
+                  "show_brightness_control": true,
+                  "show_color_temp_control": true,
+                  "show_color_control": false,
+                  "name": "Licht",
+                  "entity": "light.schlafzimmer_licht"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.schlafzimmer_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.schlafzimmer_humidity",
+                      "name": "Luftfeuchtigkeit"
+                    },
+                    {
+                      "entity": "automation.wake_up_light_alarm_with_sunrise_effect",
+                      "name": "Wecklicht"
+                    },
+                    {
+                      "entity": "input_datetime.weckzeit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Wohnzimmer",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/wohnzimmer"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "custom:mushroom-light-card",
+                  "use_light_color": true,
+                  "show_brightness_control": true,
+                  "show_color_temp_control": true,
+                  "show_color_control": false,
+                  "name": "Licht",
+                  "entity": "light.wohnzimmerlicht_switch_0"
+                },
+                {
+                  "type": "custom:mushroom-entity-card",
+                  "entity": "switch.wohnraumluftung",
+                  "tap_action": {
+                    "action": "toggle"
+                  }
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.shellymotion_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.shellymotion_luminosity",
+                      "name": "Helligkeit"
+                    },
+                    {
+                      "entity": "binary_sensor.shellymotion_motion",
+                      "name": "Bewegung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Bad",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/bad"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperatur_bad_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.temperatur_bad_humidity",
+                      "name": "Luftfeuchtigkeit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.lg_webos_smart_tv",
+              "theme": "minimalist-desktop"
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.spotify_hugo_boi"
+            },
+            {
+              "type": "custom:mushroom-entity-card",
+              "entity": "script.start_spotify_abrissparty",
+              "tap_action": {
+                "action": "call-service",
+                "service": "script.start_spotify_abrissparty",
+                "target": {}
+              }
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Server Info",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/ha-info"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "custom:mushroom-template-card",
+                  "primary": "Server Info",
+                  "secondary": "CPU {{ states(\"sensor.load_1m\") | float }}% | RAM {{ states(\"sensor.memory_use_percent\") }}% | Storage {{ states(\"sensor.disk_use_percent\") }}%",
+                  "icon": "mdi:server",
+                  "icon_color": "{% if states(\"sensor.load_1m\")| float < 50 %} green {% elif states(\"sensor.load_1m\") | float < 80 %} orange {% else %} red {% endif %}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Home Assistant",
+          "path": "ha-info",
+          "icon": "mdi:server",
+          "theme": "minimalist-mobile",
+          "subview": true,
+          "badges": [],
+          "cards": [
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities",
+                "title": "Automatisierungen"
+              },
+              "filter": {
+                "include": [
+                  {
+                    "domain": "automation"
+                  }
+                ],
+                "exclude": []
+              },
+              "sort": {
+                "method": "none",
+                "ip": false
+              }
+            },
+            {
+              "type": "custom:mushroom-alarm-control-panel-card",
+              "entity": "alarm_control_panel.zuhause",
+              "states": [
+                "armed_home",
+                "armed_away",
+                "armed_night"
+              ],
+              "show_keypad": false
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:mushroom-template-card",
+                  "primary": "Server Info",
+                  "secondary": "CPU {{ states(\"sensor.load_1m\") | float }}% | RAM {{ states(\"sensor.memory_use_percent\") }}% | Storage {{ states(\"sensor.disk_use_percent\") }}%",
+                  "icon": "mdi:cpu-64-bit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

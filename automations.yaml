@@ -1,0 +1,309 @@
+- id: '1674586218845'
+  alias: Wohnraumlüftung Zeitschaltung
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - schedule.wochen_betrieb
+    from: 'on'
+    to: 'off'
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: input_boolean.besuch
+      state: 'off'
+    alias: When no vistors
+  action:
+  - type: turn_off
+    device_id: e0e0bc7b88efaca80ceb9c4f53def525
+    entity_id: switch.shelly_shellyplus2pm_c049ef8d23a8_1
+    domain: switch
+  mode: single
+- id: '1674586507762'
+  alias: Bei Besuch Wohnraumlüftung einschalten
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.besuch
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: or
+    conditions:
+    - condition: device
+      device_id: e11384099ffeb042d96944459cde1a88
+      domain: device_tracker
+      entity_id: device_tracker.iphone_von_maria
+      type: is_home
+    - condition: device
+      device_id: d0fb7ace26ab22ac6b860561be14134a
+      domain: device_tracker
+      entity_id: device_tracker.oneplus
+      type: is_home
+    alias: When either Maria or Dominik is at home
+  action:
+  - type: turn_on
+    device_id: e0e0bc7b88efaca80ceb9c4f53def525
+    entity_id: switch.shelly_shellyplus2pm_c049ef8d23a8_1
+    domain: switch
+  mode: single
+- id: '1674984209975'
+  alias: Wenn jemand zuhause Wohnraumlüftung aktiv
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.maria
+    - person.dominik
+    from: not_home
+    to: home
+  - platform: state
+    entity_id:
+    - schedule.wochen_betrieb
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id:
+    - binary_sensor.shellymotion_motion
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: schedule.wochen_betrieb
+    state: 'on'
+  - condition: state
+    entity_id: person.dominik
+    state: home
+  - condition: state
+    entity_id: person.maria
+    state: home
+  action:
+  - type: turn_on
+    device_id: a35d9a65e20e00a55354d3d967729092
+    entity_id: switch.wohnraumluftung
+    domain: switch
+  mode: single
+- id: '1675140030294'
+  alias: Beim verlassen Wohnraumlüftung aus
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.dominik
+    from: home
+    to: not_home
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  - platform: state
+    entity_id:
+    - person.maria
+    from: home
+    to: not_home
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: person.dominik
+      state: not_home
+    - condition: state
+      entity_id: person.maria
+      state: not_home
+  action:
+  - type: turn_off
+    device_id: a35d9a65e20e00a55354d3d967729092
+    entity_id: switch.wohnraumluftung
+    domain: switch
+  mode: single
+- id: '1680958900491'
+  alias: Full Backup every Sunday
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00:00
+  condition:
+  - condition: time
+    weekday:
+    - sun
+    after: 02:00:00
+    before: 03:00:00
+  action:
+  - service: auto_backup.backup_full
+    data:
+      keep_days: 14
+  mode: single
+- id: '1680958990345'
+  alias: Partial Backup every Wed
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00:00
+  condition:
+  - condition: time
+    after: 02:00:00
+    before: 03:00:00
+    weekday:
+    - wed
+  action:
+  - service: auto_backup.backup_partial
+    data:
+      addons:
+      - grafana
+      - Configurator
+      - influxdb
+      keep_days: 14
+  mode: single
+- id: '1682749067039'
+  alias: Wake-up light alarm with sunrise effect
+  description: ''
+  use_blueprint:
+    path: sbyx/wake-up-light-alarm-with-sunrise-effect.yaml
+    input:
+      timestamp_sensor: input_datetime.weckzeit
+      check_entity: person.maria
+      manual_time: 00:00:00
+      min_mired: 0
+      light_entity: light.schlafzimmer_licht
+      start_brightness: 10
+      sunrise_duration: 10
+- id: '1682751489702'
+  alias: Taster schaltet Licht um
+  description: ''
+  trigger:
+  - device_id: 6bcf6f47ede85611bacfa305b14c38ec
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: button
+  condition: []
+  action:
+  - type: toggle
+    device_id: 3cb493211074536af96a87670a6d1d7b
+    entity_id: light.schlafzimmer_licht
+    domain: light
+  mode: single
+- id: '1682942697250'
+  alias: Daily Influxdb Backup
+  description: backup influx and grafana
+  trigger:
+  - platform: time
+    at: 03:00:00
+  condition:
+  - condition: not
+    conditions:
+    - condition: time
+      weekday:
+      - sun
+      - wed
+  action:
+  - service: auto_backup.backup_partial
+    data:
+      addons:
+      - grafana
+      - influxdb
+      - core_mariadb
+      keep_days: 4
+  mode: single
+- id: '1683569134324'
+  alias: Schlafzimmerlicht Lichttemperatur ändern
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: 0
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.abend_licht
+    metadata: {}
+  mode: single
+- id: '1683569401168'
+  alias: Schlafzimmerlicht Lichttemperatur ändern
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: 0
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.schlafzimmerlicht_sonnenaufgang_szene
+    metadata: {}
+  mode: single
+- id: '1683569602818'
+  alias: Tageslicht
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: 03:00
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.tageslicht
+    metadata: {}
+  mode: single
+- id: '1683834200388'
+  alias: NFC Tag Handy auf Schreibtisch ist gescannt
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 2933de20-0352-4ec3-9a22-52a2730f0697
+  condition: []
+  action:
+  - service: notify.mobile_app_nexus_7
+    data:
+      message: NFC gelesen
+      title: NFC
+  mode: single
+- id: '1683834364978'
+  alias: NFC Tag Handy auf Schreibtisch ist gescannt
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 2933de20-0352-4ec3-9a22-52a2730f0697
+  condition: []
+  action:
+  - service: notify.mobile_app_nexus_7
+    data:
+      message: test
+  mode: single
+- id: '1683834405583'
+  alias: NFC Tag Handy auf Schreibtisch ist gescannt
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 2933de20-0352-4ec3-9a22-52a2730f0697
+  condition: []
+  action:
+  - type: toggle
+    device_id: 702d93311c653d4643dd0cfa410265f6
+    entity_id: light.wohnzimmerlicht_switch_0
+    domain: light
+  mode: single
+- id: '1686296134443'
+  alias: Bewgungsmelder test
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.bewegungsmelder_eingang_iaszone
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - type: toggle
+    device_id: 702d93311c653d4643dd0cfa410265f6
+    entity_id: light.wohnzimmerlicht_switch_0
+    domain: light
+  mode: single

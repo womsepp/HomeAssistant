@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_maria",
+  "data": {
+    "config": {
+      "title": "Linz Wohnung",
+      "views": [
+        {
+          "theme": "minimalist-mobile",
+          "path": "default_view",
+          "title": "Home",
+          "icon": "mdi:home",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.dominik"
+                    },
+                    {
+                      "type": "custom:mushroom-entity-card",
+                      "entity": "sensor.oneplus_battery_level",
+                      "name": "One PLus"
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:mushroom-person-card",
+                      "entity": "person.maria"
+                    },
+                    {
+                      "type": "custom:mushroom-entity-card",
+                      "entity": "sensor.iphone_von_maria_battery_level",
+                      "name": "IPhone"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Schlafzimmer",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/schlafzimmer"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "custom:mushroom-light-card",
+                  "use_light_color": true,
+                  "show_brightness_control": true,
+                  "show_color_temp_control": true,
+                  "show_color_control": false,
+                  "name": "Licht",
+                  "entity": "light.schlafzimmer_licht"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.schlafzimmer_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.schlafzimmer_humidity",
+                      "name": "Luftfeuchtigkeit"
+                    },
+                    {
+                      "entity": "automation.wake_up_light_alarm_with_sunrise_effect",
+                      "name": "Wecklicht"
+                    },
+                    {
+                      "entity": "input_datetime.weckzeit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Wohnzimmer",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/wohnzimmer"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "custom:mushroom-light-card",
+                  "use_light_color": true,
+                  "show_brightness_control": true,
+                  "show_color_temp_control": true,
+                  "show_color_control": false,
+                  "name": "Licht",
+                  "entity": "light.wohnzimmerlicht_switch_0"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.shellymotion_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.shellymotion_luminosity",
+                      "name": "Helligkeit"
+                    },
+                    {
+                      "entity": "binary_sensor.shellymotion_vibration",
+                      "name": "Bewegung"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:vertical-stack-in-card",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "name": "Bad",
+                  "show_label": true,
+                  "styles": {
+                    "name": [
+                      {
+                        "font-size": "30px"
+                      },
+                      {
+                        "font-weight": "bold"
+                      }
+                    ]
+                  },
+                  "tap_action": {
+                    "action": "navigate",
+                    "navigation_path": "/lovelace/bad"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.temperatur_bad_temperature",
+                      "name": "Temperatur"
+                    },
+                    {
+                      "entity": "sensor.temperatur_bad_humidity",
+                      "name": "Luftfeuchtigkeit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "media-control",
+              "entity": "media_player.lg_webos_smart_tv",
+              "theme": "minimalist-desktop"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "energy",
+  "data": {
+    "energy_sources": [
+      {
+        "type": "grid",
+        "flow_from": [
+          {
+            "stat_energy_from": "sensor.energy_import_sum",
+            "stat_cost": null,
+            "entity_energy_price": "input_number.strompreis",
+            "number_energy_price": null
+          }
+        ],
+        "flow_to": [],
+        "cost_adjustment_day": 0.0
+      }
+    ],
+    "device_consumption": [
+      {
+        "stat_consumption": "sensor.wohnraumluftung_energy"
+      },
+      {
+        "stat_consumption": "sensor.wohnzimmerlicht_energy"
+      }
+    ]
+  }
+}

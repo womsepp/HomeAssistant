@@ -1,0 +1,13 @@
+---
+button_card_templates:
+room-card:
+  styles:
+    card:
+      - padding: 5px 15px
+    name:
+      - justify-self: start
+      - font-weight: bold
+    label:
+      - justify-self: start
+      - font-weight: bold
+      - font-size: 40px

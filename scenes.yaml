@@ -1,0 +1,59 @@
+- id: '1683568890009'
+  name: Schlafzimmerlicht Sonnenuntergang Szene
+  entities:
+    light.schlafzimmer_licht:
+      min_color_temp_kelvin: 2700
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      friendly_name: Schlafzimmer Licht
+      supported_features: 32
+      state: 'off'
+  icon: mdi:lightbulb-on-outline
+  metadata: {}
+- id: '1683569293263'
+  name: 'Schlafzimmerlicht Sonnenaufgang Szene '
+  entities:
+    light.schlafzimmer_licht:
+      min_color_temp_kelvin: 2700
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      friendly_name: Schlafzimmer Licht
+      supported_features: 32
+      color_mode: color_temp
+      brightness: 204
+      color_temp_kelvin: 6500
+      color_temp: 153
+      hs_color:
+      - 49.231
+      - 1.944
+      rgb_color:
+      - 255
+      - 254
+      - 250
+      xy_color:
+      - 0.326
+      - 0.333
+      state: 'on'
+  icon: mdi:lightbulb-on-outline
+  metadata: {}
+- id: '1683569331388'
+  name: Tageslicht
+  entities:
+    light.schlafzimmer_licht:
+      min_color_temp_kelvin: 2700
+      max_color_temp_kelvin: 6500
+      min_mireds: 153
+      max_mireds: 370
+      supported_color_modes:
+      - color_temp
+      friendly_name: Schlafzimmer Licht
+      supported_features: 32
+      state: 'off'
+  icon: mdi:calendar-today
+  metadata: {}
