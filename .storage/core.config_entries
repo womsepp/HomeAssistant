@@ -391,12 +391,12 @@
         "data": {
           "auth_implementation": "spotify_cfcd4b1a244345e799981dcb658576c3",
           "token": {
-            "access_token": "BQDTarZRQ4kWQ686u9zpU8udpKpJgeq2XiwnuZ8Gk0C3zd5cvEytdZ2kv5wL3KDKmBZ1tGMuGtGDa4lHUwd5pWAhd2KCBvBWyQp9mia44ft_Q1Pi3RDikfaA7-bzINcv-Uw-IWmX9XmuhCygr7wAChPX0gEQ1nx-m7d77jmMOa1YuqIoXx1gGta2JMXuieSRJiQvtElllaTax70624gjI2Vbr--kUSL2Ilr9xdStlOc",
+            "access_token": "BQBRRRitnhzZZl0BY7NrkVcJ8tqS-iBNw13s-9ghAz-2k18ZkDnO7k599Wzs9FUpvsC_KQJpprcB09zs3ZBVLAgOXVntuVDLzNfegenateGN8HhxWefOlr0_wJv_kEZD0lmdkHArxIsO-Lb7R_RWeUJuNuwiV_CaHuEAymBknB8qxlqfnezyu34tGPf8IT6rdvhNg7pgWkuH2Bk3bDyZxucbN6-kl_beod2WjT-eohA",
             "token_type": "Bearer",
             "expires_in": 3600,
             "refresh_token": "AQC2kAx5VxgHcRa4--uQyxicsIvarF2ReBtk1b7nbtG7Yii_5OUdd77vyYk-JfSEq5Y9rrzHd04w0S7DxKjKGk5YgmZc-DeyFEr9QH5MUabMe6wcs40m8B_a5V0q_VdF2SE",
             "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
-            "expires_at": 1686312486.6034226
+            "expires_at": 1686316090.4267647
           },
           "id": "hugo_boi",
           "name": "hugo_boi"
