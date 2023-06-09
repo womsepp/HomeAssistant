@@ -30,7 +30,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -55,7 +55,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -76,7 +76,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -104,7 +104,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -132,7 +132,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -160,7 +160,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -188,7 +188,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -216,7 +216,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -244,7 +244,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -272,7 +272,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -300,7 +300,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -328,7 +328,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -356,7 +356,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -384,7 +384,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -412,7 +412,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -440,12 +440,12 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.energy_import_sum",
-        "state": "35.69",
+        "state": "35.70",
         "attributes": {
           "state_class": "total",
           "source": "sensor.power_import",
@@ -454,10 +454,10 @@
           "friendly_name": "energy_import_sum",
           "device_class": "energy"
         },
-        "last_changed": "2023-06-09T12:35:44.625574+00:00",
-        "last_updated": "2023-06-09T12:35:44.625574+00:00",
+        "last_changed": "2023-06-09T12:51:34.569400+00:00",
+        "last_updated": "2023-06-09T12:51:34.569400+00:00",
         "context": {
-          "id": "01H2G2FMVH45CNAAX4X1DEJ1CY",
+          "id": "01H2G3CMH96H4MN4SJHCHDHCHH",
           "parent_id": null,
           "user_id": null
         }
@@ -465,13 +465,13 @@
       "extra_data": {
         "native_value": {
           "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "35.69"
+          "decimal_str": "35.70"
         },
         "native_unit_of_measurement": "kWh",
         "source_entity": "sensor.power_import",
-        "last_valid_state": "35.68782429149434166736020292"
+        "last_valid_state": "35.69722799489828055625107731"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -494,7 +494,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -517,7 +517,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -540,7 +540,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -560,7 +560,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -579,7 +579,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -609,7 +609,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -635,7 +635,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -660,7 +660,7 @@
         "source_entity": "sensor.gesamt_verbrauch_in_w",
         "last_valid_state": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -691,7 +691,7 @@
         "source_entity": "sensor.gesamtenergieverbrauchwohnung",
         "last_valid_state": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -713,7 +713,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -734,7 +734,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -756,7 +756,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -775,7 +775,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -795,7 +795,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -816,28 +816,28 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.shellymotion_luminosity",
-        "state": "2166",
+        "state": "1895",
         "attributes": {
           "state_class": "measurement",
           "unit_of_measurement": "lx",
           "device_class": "illuminance",
           "friendly_name": "Helligkeit"
         },
-        "last_changed": "2023-06-09T12:09:52.564476+00:00",
-        "last_updated": "2023-06-09T12:09:52.564476+00:00",
+        "last_changed": "2023-06-09T12:40:51.545332+00:00",
+        "last_updated": "2023-06-09T12:40:51.545332+00:00",
         "context": {
-          "id": "01H2G1095M5J6G78EGKWS83DYH",
+          "id": "01H2G2S0JSSSKE6KCSNMYDAY9Z",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -858,7 +858,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -883,7 +883,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -909,7 +909,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -935,7 +935,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -959,18 +959,18 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.energy_import_daily",
-        "state": "1.94",
+        "state": "1.95",
         "attributes": {
           "state_class": "total_increasing",
           "source": "sensor.energy_import_sum",
           "status": "collecting",
           "last_period": "4.49",
-          "last_valid_state": "35.69",
+          "last_valid_state": "35.70",
           "meter_period": "daily",
           "cron pattern": "0 0 * * *",
           "last_reset": "2023-06-08T22:00:00.026694+00:00",
@@ -979,10 +979,10 @@
           "icon": "mdi:counter",
           "friendly_name": "Energy Import Daily"
         },
-        "last_changed": "2023-06-09T12:35:44.627610+00:00",
-        "last_updated": "2023-06-09T12:35:44.627610+00:00",
+        "last_changed": "2023-06-09T12:51:34.572943+00:00",
+        "last_updated": "2023-06-09T12:51:34.572943+00:00",
         "context": {
-          "id": "01H2G2FMVKGEFR9W8GY9YQS7BA",
+          "id": "01H2G3CMHCQ5XE1TKKMM5RRH7F",
           "parent_id": null,
           "user_id": null
         }
@@ -990,26 +990,26 @@
       "extra_data": {
         "native_value": {
           "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "1.94"
+          "decimal_str": "1.95"
         },
         "native_unit_of_measurement": "kWh",
         "last_period": "4.49",
         "last_reset": "2023-06-08T22:00:00.026694+00:00",
-        "last_valid_state": "35.69",
+        "last_valid_state": "35.70",
         "status": "collecting"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.energy_import_monthly",
-        "state": "34.05",
+        "state": "34.06",
         "attributes": {
           "state_class": "total_increasing",
           "source": "sensor.energy_import_sum",
           "status": "collecting",
           "last_period": "92.18",
-          "last_valid_state": "35.69",
+          "last_valid_state": "35.70",
           "meter_period": "monthly",
           "cron pattern": "0 0 1 * *",
           "last_reset": "2023-05-31T22:02:42.869913+00:00",
@@ -1018,10 +1018,10 @@
           "icon": "mdi:counter",
           "friendly_name": "Energy Import Monthly"
         },
-        "last_changed": "2023-06-09T12:35:44.627820+00:00",
-        "last_updated": "2023-06-09T12:35:44.627820+00:00",
+        "last_changed": "2023-06-09T12:51:34.573266+00:00",
+        "last_updated": "2023-06-09T12:51:34.573266+00:00",
         "context": {
-          "id": "01H2G2FMVKTYW2SD3BEBTWTXF5",
+          "id": "01H2G3CMHD3Y6P81AKNN390WWR",
           "parent_id": null,
           "user_id": null
         }
@@ -1029,15 +1029,15 @@
       "extra_data": {
         "native_value": {
           "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "34.05"
+          "decimal_str": "34.06"
         },
         "native_unit_of_measurement": "kWh",
         "last_period": "92.18",
         "last_reset": "2023-05-31T22:02:42.869913+00:00",
-        "last_valid_state": "35.69",
+        "last_valid_state": "35.70",
         "status": "collecting"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1071,7 +1071,7 @@
         "last_valid_state": null,
         "status": "collecting"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1105,7 +1105,7 @@
         "last_valid_state": null,
         "status": "collecting"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1141,7 +1141,7 @@
         "last_valid_state": "286.139",
         "status": "collecting"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1160,7 +1160,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1189,7 +1189,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1208,7 +1208,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1237,7 +1237,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1262,7 +1262,7 @@
         "native_value": 78,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1284,7 +1284,7 @@
         "native_value": "not_charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1306,7 +1306,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1328,7 +1328,7 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1353,7 +1353,7 @@
         "native_value": 18.0,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1380,7 +1380,7 @@
         "native_value": 0.0,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1400,7 +1400,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1419,7 +1419,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1446,7 +1446,7 @@
         "native_value": "0.00",
         "native_unit_of_measurement": "% available"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1468,7 +1468,7 @@
         "native_value": "Unknown",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1490,7 +1490,7 @@
         "native_value": "Not Connected",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1513,7 +1513,7 @@
         "native_value": "Not Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1537,7 +1537,7 @@
         "native_value": 37,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1559,7 +1559,7 @@
         "native_value": "Periodic",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1582,7 +1582,7 @@
         "native_value": "Cellular",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1608,7 +1608,7 @@
         "native_value": "Unknown",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1631,7 +1631,7 @@
         "native_value": 1717,
         "native_unit_of_measurement": "m"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1654,7 +1654,7 @@
         "native_value": 2,
         "native_unit_of_measurement": "floors"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1677,7 +1677,7 @@
         "native_value": 3,
         "native_unit_of_measurement": "floors"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1700,7 +1700,7 @@
         "native_value": 2552,
         "native_unit_of_measurement": "steps"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1723,7 +1723,7 @@
         "native_value": 0,
         "native_unit_of_measurement": "m/s"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1742,7 +1742,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1762,7 +1762,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1787,7 +1787,7 @@
         "native_value": 49,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1809,7 +1809,7 @@
         "native_value": "not_charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1837,7 +1837,7 @@
         },
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1860,7 +1860,7 @@
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1884,7 +1884,7 @@
         "native_value": "0",
         "native_unit_of_measurement": "steps"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1904,7 +1904,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1930,12 +1930,12 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.hd1903_battery_level",
-        "state": "38",
+        "state": "36",
         "attributes": {
           "state_class": "measurement",
           "unit_of_measurement": "%",
@@ -1943,19 +1943,19 @@
           "icon": "mdi:battery-30",
           "friendly_name": "OnePlus Battery Level"
         },
-        "last_changed": "2023-06-09T12:37:56.399200+00:00",
-        "last_updated": "2023-06-09T12:37:56.399200+00:00",
+        "last_changed": "2023-06-09T12:53:28.678454+00:00",
+        "last_updated": "2023-06-09T12:53:28.678454+00:00",
         "context": {
-          "id": "01H2G2KNHF8839PRE5JVRJZQEM",
+          "id": "01H2G3G3Z674RFPS37JD5BMC3B",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 38,
+        "native_value": 36,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1977,7 +1977,7 @@
         "native_value": "not_charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -1999,7 +1999,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2019,7 +2019,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2027,25 +2027,25 @@
         "state": "not_home",
         "attributes": {
           "source_type": "gps",
-          "latitude": 48.3030653,
-          "longitude": 14.3028957,
-          "gps_accuracy": 27,
+          "latitude": 48.3030743,
+          "longitude": 14.3028997,
+          "gps_accuracy": 21,
           "altitude": 312,
-          "course": 0,
+          "course": 259,
           "speed": 0,
           "vertical_accuracy": 1,
           "friendly_name": "OnePlus"
         },
-        "last_changed": "2023-06-09T12:32:28.369783+00:00",
-        "last_updated": "2023-06-09T12:32:28.369783+00:00",
+        "last_changed": "2023-06-09T12:52:20.439354+00:00",
+        "last_updated": "2023-06-09T12:52:20.439354+00:00",
         "context": {
-          "id": "01H2G29N6H0N5AM7Z9HHVJZ0Z5",
+          "id": "01H2G3E1AQNQ561E92M0ZSN9AS",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2064,7 +2064,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2084,7 +2084,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2104,7 +2104,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2124,7 +2124,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2143,7 +2143,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2162,7 +2162,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2181,7 +2181,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2200,7 +2200,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2219,7 +2219,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2238,7 +2238,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2260,7 +2260,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2281,7 +2281,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2302,7 +2302,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2321,7 +2321,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2342,7 +2342,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2364,7 +2364,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2385,7 +2385,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2406,7 +2406,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2428,7 +2428,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2450,7 +2450,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2469,7 +2469,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2491,7 +2491,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2513,7 +2513,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2536,7 +2536,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2559,7 +2559,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2582,7 +2582,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2605,7 +2605,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2628,7 +2628,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2651,7 +2651,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2674,7 +2674,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2697,7 +2697,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2720,7 +2720,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2743,7 +2743,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2766,7 +2766,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2789,7 +2789,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2811,7 +2811,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2833,7 +2833,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2855,7 +2855,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
@@ -2877,7 +2877,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-06-09T12:40:07.872871+00:00"
+      "last_seen": "2023-06-09T12:55:07.874528+00:00"
     },
     {
       "state": {
